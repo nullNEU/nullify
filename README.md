@@ -17,8 +17,9 @@ There are a couple of things that we are proud about regarding our website.
 
 ## Contributing
 
-If you find the project interesting or find some bugs, you can help us in various ways:
-- If you find a bug, raise a [new issue]() on the project
-- If you feel that you can work on an existing task, feel free to comment on the issue and pick it up!
+If you find a bug somewhere, feel free to raise a [new issue](https://github.com/nullNEU/nullify/issues) on GitHub.
 
-Detailed guidelines for setting the project up locally and contriuting can be found in the [contribution guidelines](CONTRIBUTING.md) for the project.
+> [!NOTE]  
+> Please check if the bug/feature you are raising/requesting has already been reported before you create a new issue!
+
+Detailed guidelines for setting the project up locally and contributing can be found in the [contribution guidelines](CONTRIBUTING.md) for the project.
