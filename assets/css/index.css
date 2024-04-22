@@ -17,6 +17,10 @@ navbar {
 	}
 }
 
+.nav-link {
+	letter-spacing: 2px;
+}
+
 footer {
 	height: 9vh;
 	background-color: black;
@@ -35,6 +39,11 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
 .underline {
 	text-decoration: underline;
 }
@@ -50,6 +59,10 @@ a {
 
 .flex-wrap {
 	flex-wrap: wrap;
+}
+
+.align-items-center {
+	align-items: center;
 }
 
 .grid {

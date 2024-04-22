@@ -9,4 +9,8 @@
 	{{ $css := resources.Get "css/home.css" }}
 	{{ $styles := $css | toCSS | minify | fingerprint }}
 	<link type="text/css" rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen"/>
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css"
+	/>
 </head> 
