@@ -1,6 +1,6 @@
 {{ define "main" }}
   <main>
-    <article>
+    <article class="page-info" id="event-page">
       <header>
         <h1>{{ .Title }}</h1>
       </header>
@@ -9,6 +9,7 @@
     </article>
     <ul>
       <!-- Ranges through content/posts/*.md -->
+	  Event list
       {{ range .Pages }}
         <li>
           <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}</a>

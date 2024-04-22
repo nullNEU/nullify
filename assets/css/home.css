@@ -1,0 +1,13 @@
+.home-content-wrapper {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+
+	.grid {
+		padding: 1rem;
+	}
+}
+
+.home-card {
+	padding: 1rem;
+}

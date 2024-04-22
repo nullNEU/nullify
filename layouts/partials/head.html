@@ -1,4 +1,12 @@
 <head>
 	<title>{{- .Title -}}</title>
-	<link rel="stylesheet" href="css/index.css" media="screen"/>
+	{{ $css := resources.Get "css/reset.css" }}
+	{{ $styles := $css | toCSS | minify | fingerprint }}
+	<link type="text/css" rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen"/>
+	{{ $css := resources.Get "css/index.css" }}
+	{{ $styles := $css | toCSS | minify | fingerprint }}
+	<link type="text/css" rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen"/>
+	{{ $css := resources.Get "css/home.css" }}
+	{{ $styles := $css | toCSS | minify | fingerprint }}
+	<link type="text/css" rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen"/>
 </head> 
