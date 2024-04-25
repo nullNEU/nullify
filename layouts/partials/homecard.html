@@ -1,1 +1,7 @@
-<div class="home-card">{{ .test }}</div>
+<div class="home-card">
+	<i class="{{ .icon }} card-main-icon"></i>
+	<p class="home-card-text">{{ .text }}</p>
+	<a class="home-card-link flex align-items-center justify-content-center" href="{{ .link }}">
+		{{ .linkText }} <span><i class="iconoir-arrow-right"></i></span>
+	</a>
+</div>

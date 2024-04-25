@@ -1,13 +1,13 @@
 {{ define "main" }}
 <div class="home-content-wrapper">
-	<h1>Security matters</h1>
-	<div class="grid columns-three-and-one">
-		{{- partial "homecard.html" ( dict "test" "Card one content goes here" ) -}}
-		{{- partial "homecard.html" ( dict "test" "Card two content goes here" ) -}}
-		{{- partial "homecard.html" ( dict "test" "Card three content goes here" ) -}}
+	<h1 class="home-content-item matters sanchez">Security matters</h1>
+	<div class="grid columns-three-and-one home-content-item">
+		{{- partial "homecard.html" ( dict "icon" "iconoir-code" "text" "In-house secure software development" "linkText" "Take a look" "link" "/projects" ) -}}
+		{{- partial "homecard.html" ( dict "icon" "iconoir-curve-array" "text" "Learn. Train. Compete. Grow." "linkText" "We are a great team" "link" "/events" ) -}}
+		{{- partial "homecard.html" ( dict "icon" "iconoir-network-solid" "text" "Honesty. Empathy. Community." "linkText" "More about us" "link" "/about" ) -}}
 	</div>
-	<h4>Our speakers work at world class firms</h4>
-	<div class="flex flex-wrap companies-list">
+	<h4 class="home-content-item speakers-header">Our speakers work at world class firms</h4>
+	<div class="flex flex-wrap companies-list home-content-item">
 		<!-- company logos -->
 	</div>
 </div>
