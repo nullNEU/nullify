@@ -1,6 +1,6 @@
 body {
 	overflow-x: hidden;
-	font-family: sans-serif;
+	font-family: "Montserrat", sans-serif;
 	padding: 0;
 	margin: 0;
 	min-height: 100vh;
@@ -32,6 +32,12 @@ footer {
 	ul {
 		gap: 1.5rem!important;
 	}
+}
+
+.sanchez {
+	font-family: "Sanchez", serif;
+	font-weight: 400;
+  	font-style: normal;
 }
 
 a {
