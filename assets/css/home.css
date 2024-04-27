@@ -1,11 +1,6 @@
 .home-content-wrapper {
 	width: 70%;
 	margin: 0 auto;
-	text-align: center;
-
-	.grid {
-		padding: 1rem;
-	}
 
 	.home-content-item {
 		margin: 4rem 0;
@@ -13,13 +8,18 @@
 }
 
 .matters {
-	font-size: 3rem;
-	font-weight: bold;
+	font-size: 6rem;
+	font-weight: bolder;
+
+	@media only screen and (max-width: 780px) {
+		font-size: 3rem;
+		text-align: center;
+	}
 }
 
 .home-card {
-	padding: 3rem 2rem;
-	border: 1px solid transparent;
+	width: 90%;
+	padding: 3rem 0;
 	border-radius: 10px;
 
 	.card-main-icon {
@@ -31,25 +31,36 @@
 		margin: 1rem 0;
 	}
 
+	.home-card-summary {
+		color: gray;
+	}
+
 	.home-card-link {
 		margin-top: 10px;
 		color: gray;
 		gap: 5px;
-		text-decoration: none;
+		text-decoration: underline;
 		transition: all ease-in-out 100ms;
 
 		&:hover {
 			gap: 0.7rem;
 		}
 	}
+
+	@media only screen and (max-width: 780px) {
+		padding: 2rem 0;
+	}
 }
 
 .home-card:hover {
-	border: 1px solid lightgrey;
 	cursor: pointer;
 }
 
 .speakers-header {
 	font-size: 1.2rem;
 	font-style: italic;
+
+	@media only screen and (max-width: 780px) {
+		text-align: center;
+	}
 }
