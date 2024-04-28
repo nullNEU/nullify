@@ -2,3 +2,26 @@ baseURL: "/"
 languageCode: "en-us"
 title: "Null NEU"
 enableRobotsTXT: true
+
+params:
+  home:
+    homecard:
+      - card:
+          header: "Secure software development"
+          icon: "iconoir-code"
+          summary: "We take pride in developing secure and efficient codebases—can you find a bug?"
+          linkText: "Take a look"
+          link: "/projects"
+      - card:
+          header: "Learn. Train. Compete. Grow."
+          icon: "iconoir-curve-array"
+          summary: "Participate in our events, learn interesting topics together, and upskill your tech skills"
+          linkText: "We are a great team"
+          link: "/events"
+      - card:
+          header: "Honesty. Empathy. Community."
+          icon: "iconoir-network-solid"
+          summary: "Meet like minded people and geek out with our growing and supportive comunity!"
+          linkText: "More about us"
+          link: "/about"
+    companies: ["akamai", "citizens", "ey", "fidelity", "raytheon", "wayfair", "discover"]

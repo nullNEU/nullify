@@ -1,21 +1,77 @@
 .home-content-wrapper {
 	width: 70%;
 	margin: 0 auto;
+	padding-top: 5rem;
 
 	.home-content-item {
 		margin: 4rem 0;
 	}
 }
 
-.matters {
-	font-size: 6rem;
+/* Header text aniamtion styling begins */
+.matters-text {
+	margin: 0;
+	font-size: 5rem;
 	font-weight: bolder;
 
 	@media only screen and (max-width: 780px) {
-		font-size: 3rem;
+		font-size: 2rem;
 		text-align: center;
 	}
 }
+
+.matters-wrapper {
+	height: 120px;
+	overflow: hidden;
+
+	.matters-text {
+		font-size: 4.5rem;
+
+		@media only screen and (max-width: 780px) {
+			font-size: 2rem;
+			text-align: center;
+		}
+	}
+
+	@media only screen and (max-width: 780px) {
+		height: 40px;
+	}
+
+	.content__container__list {
+		margin-top: 0;
+		text-align: left;
+
+		.content__container__list__item {
+			line-height: 120px;
+			white-space: nowrap;
+			margin: 0;
+			-webkit-animation-name: change;
+			-webkit-animation-duration: 10s;
+			-webkit-animation-iteration-count: infinite;
+			animation-name: change;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+
+			@media only screen and (max-width: 780px) {
+				line-height: 40px;
+			}
+		}
+	}
+}
+
+@keyframes change {
+	0%, 30%, 100% {
+		transform: translate3d(0, 0, 0);
+   }
+	40%, 65% {
+		transform: translate3d(0, -100%, 0);
+   }
+	75%, 95% {
+		transform: translate3d(0, -200%, 0);
+	}
+}
+
+/* Header text animation styling ends */
 
 .home-card {
 	width: 90%;
@@ -59,8 +115,25 @@
 .speakers-header {
 	font-size: 1.2rem;
 	font-style: italic;
+	margin-bottom: 2rem!important;
 
 	@media only screen and (max-width: 780px) {
 		text-align: center;
+	}
+}
+
+.companies-list {
+	margin-top: 0!important;
+	gap: 3rem;
+
+	@media only screen and (max-width: 780px) {
+		justify-content: center;
+	}
+}
+
+.speaker-company-logo {
+	filter: grayscale(100);
+	&:hover {
+		filter: grayscale(0);
 	}
 }

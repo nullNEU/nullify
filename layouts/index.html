@@ -1,14 +1,29 @@
 {{ define "main" }}
 <div class="home-content-wrapper">
-	<h1 class="home-content-item matters sanchez">Security matters...</h1>
+	<div class="matters-wrapper sanchez">
+		<ul class="content__container__list">
+			<li class="matters-text content__container__list__item">Security</li>
+			<li class="matters-text content__container__list__item">Privacy</li>
+			<li class="matters-text content__container__list__item">Open source</li>
+		</ul>
+	</div>
+	<h1 class="matters-text ">
+		matters to us...
+	</h1>
 	<div class="grid columns-three-and-one home-content-item">
-		{{- partial "homecard.html" ( dict "icon" "iconoir-code" "text" "In-house secure software development" "linkText" "Take a look" "link" "/projects" ) -}}
-		{{- partial "homecard.html" ( dict "icon" "iconoir-curve-array" "text" "Learn. Train. Compete. Grow." "linkText" "We are a great team" "link" "/events" ) -}}
-		{{- partial "homecard.html" ( dict "icon" "iconoir-network-solid" "text" "Honesty. Empathy. Community." "linkText" "More about us" "link" "/about" ) -}}
+		{{ range $homecard := .Site.Params.home.homecard }}
+			{{- partial "homecard.html" ( dict "icon" $homecard.card.icon "text" $homecard.card.header "summary" $homecard.card.summary "linkText" $homecard.card.linkText "link" $homecard.card.link ) -}}
+		{{ end }}
 	</div>
 	<h4 class="home-content-item speakers-header">Our speakers work at world class firms</h4>
 	<div class="flex flex-wrap companies-list home-content-item">
 		<!-- company logos -->
+		{{ range $logo := .Site.Params.home.companies }}
+			{{ $path := printf "%s" ".png" | printf "%s%s" $logo | printf "%s%s" "images/companies/" | printf "%s" }}
+			{{ with resources.Get $path }}
+				<img class="speaker-company-logo" src="{{ .RelPermalink }}" height="30" />
+			{{ end }}
+		{{ end }}
 	</div>
 </div>
 {{ end }}
