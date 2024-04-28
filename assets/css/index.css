@@ -17,20 +17,21 @@ navbar {
 	}
 }
 
-.nav-link {
-	letter-spacing: 2px;
-}
-
 footer {
 	height: 9vh;
-	background-color: black;
-	color: white;
+	background-color: rgb(229, 229, 229);
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 2rem;
 
 	ul {
 		gap: 1.5rem!important;
+	}
+
+	i {
+		&:hover {
+			transform: translateY(-2px);
+		}
 	}
 }
 
