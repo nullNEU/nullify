@@ -32,11 +32,11 @@
 		font-size: 2rem;
 	}
 
-	.content__container__list {
+	.content-container-list {
 		margin-top: 0;
 		text-align: center;
 
-		.content__container__list__item {
+		.content-container-list-item {
 			line-height: 50px;
 			white-space: nowrap;
 			margin: 0;
@@ -105,31 +105,5 @@
 
 	@media only screen and (max-width: 780px) {
 		width: 100%;
-	}
-}
-
-.speakers-header {
-	font-size: 1.2rem;
-	font-style: italic;
-	margin-bottom: 2rem!important;
-
-	@media only screen and (max-width: 780px) {
-		text-align: center;
-	}
-}
-
-.companies-list {
-	margin-top: 0!important;
-	gap: 3rem;
-
-	@media only screen and (max-width: 780px) {
-		justify-content: center;
-	}
-}
-
-.speaker-company-logo {
-	filter: grayscale(100);
-	&:hover {
-		filter: grayscale(0);
 	}
 }
