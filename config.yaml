@@ -8,19 +8,19 @@ params:
     homecard:
       - card:
           header: "Secure software development"
-          icon: "iconoir-code"
+          icon: "bx bx-code-alt"
           summary: "We take pride in developing secure and efficient codebases—can you find a bug?"
           linkText: "Take a look"
           link: "/projects"
       - card:
           header: "Learn. Train. Compete. Grow."
-          icon: "iconoir-curve-array"
+          icon: "bx bxs-category"
           summary: "Participate in our events, learn interesting topics together, and upskill your tech skills"
           linkText: "We are a great team"
           link: "/events"
       - card:
           header: "Honesty. Empathy. Community."
-          icon: "iconoir-network-solid"
+          icon: "bx bxs-network-chart"
           summary: "Meet like minded people and geek out with our growing and supportive comunity!"
           linkText: "More about us"
           link: "/about"

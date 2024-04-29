@@ -1,7 +1,10 @@
 .home-content-wrapper {
 	width: 70%;
 	margin: 0 auto;
-	padding-top: 5rem;
+
+	@media only screen and (max-width: 780px) {
+		padding-top: 5rem;
+	}
 
 	.home-content-item {
 		margin: 4rem 0;
@@ -75,8 +78,13 @@
 
 .home-card {
 	width: 90%;
-	padding: 3rem 0;
+	padding: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.116);
 	border-radius: 10px;
+
+	&:hover {
+		border: 1px solid black;
+	}
 
 	.card-main-icon {
 		font-size: 2.5rem;
@@ -92,19 +100,22 @@
 	}
 
 	.home-card-link {
+		width: fit-content;
 		margin-top: 10px;
 		color: gray;
-		gap: 5px;
+		gap: 3px;
 		text-decoration: underline;
 		transition: all ease-in-out 100ms;
 
 		&:hover {
 			gap: 0.7rem;
+			color: black;
+			text-decoration: none;
 		}
 	}
 
 	@media only screen and (max-width: 780px) {
-		padding: 2rem 0;
+		width: 100%;
 	}
 }
 
