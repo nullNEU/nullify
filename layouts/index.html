@@ -5,11 +5,11 @@
 			<li class="matters-text content-container-list-item">Security</li>
 			<li class="matters-text content-container-list-item">Privacy</li>
 			<li class="matters-text content-container-list-item">Cyber awareness</li>
-			<li class="matters-text content-container-list-item">Open source intelligence</li>
+			<li class="matters-text content-container-list-item">OSINT</li>
 			<li class="matters-text content-container-list-item">Encryption</li>
 		</ul>
 	</div>
-	<div class="grid columns-three-and-one home-content-item" style="gap: 4rem;">
+	<div class="card-wrapper flex home-content-item">
 		{{ range $homecard := .Site.Params.home.homecard }}
 			{{- partial "homecard.html" ( dict "icon" $homecard.card.icon "text" $homecard.card.header "summary" $homecard.card.summary "linkText" $homecard.card.linkText "link" $homecard.card.link ) -}}
 		{{ end }}

@@ -81,11 +81,3 @@ a:hover {
 	display: grid;
 	gap: 1rem;
 }
-
-.columns-three-and-one {
-	grid-template-columns: auto auto auto;
-
-	@media only screen and (max-width: 780px) {
-		grid-template-columns: auto;	
-	}
-}

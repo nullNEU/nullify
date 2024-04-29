@@ -1,14 +1,25 @@
 .home-content-wrapper {
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
 
-	@media only screen and (max-width: 780px) {
+	@media only screen and (max-width: 640px) {
 		padding-top: 5rem;
+		width: 90%;
+	}
+
+	@media only screen and (max-width: 1007px) {
 		width: 90%;
 	}
 
 	.home-content-item {
 		margin: 4rem 0;
+	}
+
+	.card-wrapper {
+		@media only screen and (max-width: 640px) {
+			flex-direction: column;
+			gap: 4rem;
+		}
 	}
 }
 
@@ -18,7 +29,7 @@
 	font-size: 2rem;
 	font-weight: bolder;
 
-	@media only screen and (max-width: 780px) {
+	@media only screen and (max-width: 640px) {
 		font-size: 2rem;
 		text-align: center;
 	}
@@ -53,17 +64,17 @@
 @keyframes change {
 	0%, 20%, 100% {
 		transform: translate3d(0, 0, 0);
-   }
+    }
 	30%, 40% {
 		transform: translate3d(0, -100%, 0);
-   }
+    }
 	50%, 60% {
 		transform: translate3d(0, -200%, 0);
 	}
 	70%, 80% {
 		transform: translate3d(0, -300%, 0);
 	}
-	90%, 99% {
+	89%, 99% {
 		transform: translate3d(0, -400%, 0);
 	}
 }
@@ -72,7 +83,7 @@
 
 .home-card {
 	width: 100%;
-	border-radius: 10px;
+	margin: 0 auto;
 
 	.icon-header {
 		text-align: center;
@@ -103,7 +114,7 @@
 		}
 	}
 
-	@media only screen and (max-width: 780px) {
-		width: 100%;
+	@media only screen and (max-width: 1007px) {
+		width: 80%;
 	}
 }
