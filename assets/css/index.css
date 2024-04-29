@@ -73,6 +73,10 @@ a:hover {
 	align-items: center;
 }
 
+.justify-content-center {
+	justify-content: center;
+}
+
 .grid {
 	display: grid;
 	gap: 1rem;
@@ -80,7 +84,8 @@ a:hover {
 
 .columns-three-and-one {
 	grid-template-columns: auto auto auto;
-	@media screen and (max-width: 760px) {
-		grid-template-columns: auto;
+
+	@media only screen and (max-width: 780px) {
+		grid-template-columns: auto;	
 	}
 }

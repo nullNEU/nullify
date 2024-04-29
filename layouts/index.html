@@ -1,14 +1,18 @@
 {{ define "main" }}
 <div class="home-content-wrapper">
-	<h1>Security matters</h1>
-	<div class="grid columns-three-and-one">
-		{{- partial "homecard.html" ( dict "test" "Card one content goes here" ) -}}
-		{{- partial "homecard.html" ( dict "test" "Card two content goes here" ) -}}
-		{{- partial "homecard.html" ( dict "test" "Card three content goes here" ) -}}
+	<div class="matters-wrapper sanchez home-content-item">
+		<ul class="content-container-list">
+			<li class="matters-text content-container-list-item">Security</li>
+			<li class="matters-text content-container-list-item">Privacy</li>
+			<li class="matters-text content-container-list-item">Cyber awareness</li>
+			<li class="matters-text content-container-list-item">Open source intelligence</li>
+			<li class="matters-text content-container-list-item">Encryption</li>
+		</ul>
 	</div>
-	<h4>Our speakers work at world class firms</h4>
-	<div class="flex flex-wrap companies-list">
-		<!-- company logos -->
+	<div class="grid columns-three-and-one home-content-item" style="gap: 4rem;">
+		{{ range $homecard := .Site.Params.home.homecard }}
+			{{- partial "homecard.html" ( dict "icon" $homecard.card.icon "text" $homecard.card.header "summary" $homecard.card.summary "linkText" $homecard.card.linkText "link" $homecard.card.link ) -}}
+		{{ end }}
 	</div>
 </div>
 {{ end }}

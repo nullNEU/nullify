@@ -1,13 +1,109 @@
 .home-content-wrapper {
-	width: 70%;
+	width: 50%;
 	margin: 0 auto;
-	text-align: center;
 
-	.grid {
-		padding: 1rem;
+	@media only screen and (max-width: 780px) {
+		padding-top: 5rem;
+		width: 90%;
+	}
+
+	.home-content-item {
+		margin: 4rem 0;
 	}
 }
 
+/* Header text aniamtion styling begins */
+.matters-text {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: bolder;
+
+	@media only screen and (max-width: 780px) {
+		font-size: 2rem;
+		text-align: center;
+	}
+}
+
+.matters-wrapper {
+	height: 50px;
+	overflow: hidden;
+
+	.matters-text {
+		font-size: 2rem;
+	}
+
+	.content-container-list {
+		margin-top: 0;
+		text-align: center;
+
+		.content-container-list-item {
+			line-height: 50px;
+			white-space: nowrap;
+			margin: 0;
+			-webkit-animation-name: change;
+			-webkit-animation-duration: 10s;
+			-webkit-animation-iteration-count: infinite;
+			animation-name: change;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+		}
+	}
+}
+
+@keyframes change {
+	0%, 20%, 100% {
+		transform: translate3d(0, 0, 0);
+   }
+	30%, 40% {
+		transform: translate3d(0, -100%, 0);
+   }
+	50%, 60% {
+		transform: translate3d(0, -200%, 0);
+	}
+	70%, 80% {
+		transform: translate3d(0, -300%, 0);
+	}
+	90%, 99% {
+		transform: translate3d(0, -400%, 0);
+	}
+}
+
+/* Header text animation styling ends */
+
 .home-card {
-	padding: 1rem;
+	width: 100%;
+	border-radius: 10px;
+
+	.icon-header {
+		text-align: center;
+		font-size: 2rem;
+		margin: 1rem 0;
+	}
+
+	.home-card-summary {
+		text-align: center;
+		color: gray;
+		margin: 1rem 0;
+	}
+
+	.home-card-link {
+		width: fit-content;
+		background-color: black;
+		border-radius: 10px;
+		margin: 0 auto;
+		margin-top: 10px;
+		padding: 8px 12px;
+		color: white;
+		gap: 3px;
+		transition: all ease-in-out 100ms;
+
+		&:hover {
+			gap: 0.7rem;
+			text-decoration: none;
+		}
+	}
+
+	@media only screen and (max-width: 780px) {
+		width: 100%;
+	}
 }

@@ -1,1 +1,10 @@
-<div class="home-card">{{ .test }}</div>
+<div class="home-card">
+	<div class="icon-header flex align-items-center justify-content-center">
+		<i class="{{ .icon }} card-main-icon"></i>
+		<p class="home-card-text" style="font-weight: bold;">{{ .text }}</p>
+	</div>
+	<p class="home-card-summary">{{ .summary }}</p>
+	<a class="home-card-link flex align-items-center" href="{{ .link }}">
+		{{ .linkText }} <span><i class="bx bx-right-arrow-alt bx-sm"></i></span>
+	</a>
+</div>
