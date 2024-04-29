@@ -1,9 +1,10 @@
 .home-content-wrapper {
-	width: 70%;
+	width: 50%;
 	margin: 0 auto;
 
 	@media only screen and (max-width: 780px) {
 		padding-top: 5rem;
+		width: 90%;
 	}
 
 	.home-content-item {
@@ -14,7 +15,7 @@
 /* Header text aniamtion styling begins */
 .matters-text {
 	margin: 0;
-	font-size: 5rem;
+	font-size: 2rem;
 	font-weight: bolder;
 
 	@media only screen and (max-width: 780px) {
@@ -24,28 +25,19 @@
 }
 
 .matters-wrapper {
-	height: 120px;
+	height: 50px;
 	overflow: hidden;
 
 	.matters-text {
-		font-size: 4.5rem;
-
-		@media only screen and (max-width: 780px) {
-			font-size: 2rem;
-			text-align: center;
-		}
-	}
-
-	@media only screen and (max-width: 780px) {
-		height: 40px;
+		font-size: 2rem;
 	}
 
 	.content__container__list {
 		margin-top: 0;
-		text-align: left;
+		text-align: center;
 
 		.content__container__list__item {
-			line-height: 120px;
+			line-height: 50px;
 			white-space: nowrap;
 			margin: 0;
 			-webkit-animation-name: change;
@@ -54,62 +46,59 @@
 			animation-name: change;
 			animation-duration: 10s;
 			animation-iteration-count: infinite;
-
-			@media only screen and (max-width: 780px) {
-				line-height: 40px;
-			}
 		}
 	}
 }
 
 @keyframes change {
-	0%, 30%, 100% {
+	0%, 20%, 100% {
 		transform: translate3d(0, 0, 0);
    }
-	40%, 65% {
+	30%, 40% {
 		transform: translate3d(0, -100%, 0);
    }
-	75%, 95% {
+	50%, 60% {
 		transform: translate3d(0, -200%, 0);
+	}
+	70%, 80% {
+		transform: translate3d(0, -300%, 0);
+	}
+	90%, 99% {
+		transform: translate3d(0, -400%, 0);
 	}
 }
 
 /* Header text animation styling ends */
 
 .home-card {
-	width: 90%;
-	padding: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.116);
+	width: 100%;
 	border-radius: 10px;
 
-	&:hover {
-		border: 1px solid black;
-	}
-
-	.card-main-icon {
-		font-size: 2.5rem;
-	}
-
-	.home-card-text {
-		font-size: 1.5rem;
+	.icon-header {
+		text-align: center;
+		font-size: 2rem;
 		margin: 1rem 0;
 	}
 
 	.home-card-summary {
+		text-align: center;
 		color: gray;
+		margin: 1rem 0;
 	}
 
 	.home-card-link {
 		width: fit-content;
+		background-color: black;
+		border-radius: 10px;
+		margin: 0 auto;
 		margin-top: 10px;
-		color: gray;
+		padding: 8px 12px;
+		color: white;
 		gap: 3px;
-		text-decoration: underline;
 		transition: all ease-in-out 100ms;
 
 		&:hover {
 			gap: 0.7rem;
-			color: black;
 			text-decoration: none;
 		}
 	}
@@ -117,10 +106,6 @@
 	@media only screen and (max-width: 780px) {
 		width: 100%;
 	}
-}
-
-.home-card:hover {
-	cursor: pointer;
 }
 
 .speakers-header {

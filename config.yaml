@@ -7,21 +7,21 @@ params:
   home:
     homecard:
       - card:
-          header: "Secure software development"
+          header: "code"
           icon: "bx bx-code-alt"
-          summary: "We take pride in developing secure and efficient codebases—can you find a bug?"
-          linkText: "Take a look"
+          summary: "We build secure software"
+          linkText: "Learn more"
           link: "/projects"
       - card:
-          header: "Learn. Train. Compete. Grow."
-          icon: "bx bxs-category"
-          summary: "Participate in our events, learn interesting topics together, and upskill your tech skills"
-          linkText: "We are a great team"
+          header: "hack"
+          icon: "bx bxs-terminal"
+          summary: "We organise and play CTFs"
+          linkText: "Learn more"
           link: "/events"
       - card:
-          header: "Honesty. Empathy. Community."
+          header: "network"
           icon: "bx bxs-network-chart"
-          summary: "Meet like minded people and geek out with our growing and supportive comunity!"
-          linkText: "More about us"
+          summary: "We are an open community"
+          linkText: "Learn more"
           link: "/about"
     companies: ["akamai", "citizens", "ey", "fidelity", "raytheon", "wayfair", "discover"]
