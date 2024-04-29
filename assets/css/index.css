@@ -48,7 +48,6 @@ a {
 
 a:hover {
 	text-decoration: underline;
-	text-decoration-style: dashed;
 }
 
 .underline {
@@ -56,7 +55,9 @@ a:hover {
 }
 
 .wrapper {
-	min-height: 85vh;
+	min-height: 95vh;
+	display: flex;
+	align-items: center;
 }
 
 .flex {
