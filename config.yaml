@@ -24,4 +24,3 @@ params:
           summary: "We are an open community"
           linkText: "Learn more"
           link: "/about"
-    companies: ["akamai", "citizens", "ey", "fidelity", "raytheon", "wayfair", "discover"]
