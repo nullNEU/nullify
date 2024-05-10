@@ -1,5 +1,30 @@
-{{ define "main" }}
-  <main id="main">
-    <p>Oops, that page could not be found :(</p>
-  </main>
-{{ end }}
+<!-- CSS Objects -->
+{{ $resetCSS := resources.Get "css/reset.css" }}
+{{ $fofCSS := resources.Get "css/fof.css" }}
+{{ $headerCSS := resources.Get "css/header.css" }}
+{{ $footerCSS := resources.Get "css/footer.css" }}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Font Family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Stylesheet -->
+        <link type="text/css" rel="stylesheet" href="{{ $fofCSS.RelPermalink }}"/>
+        <link type="text/css" rel="stylesheet" href="{{ $headerCSS.RelPermalink }}"/>
+        <link type="text/css" rel="stylesheet" href="{{ $footerCSS.RelPermalink }}"/>
+        <link type="text/css" rel="stylesheet" href="{{ $resetCSS.RelPermalink }}"/>
+    </head>
+    <!-- Render Webpage using Hugo Partials -->
+    <body>
+        {{- partial "header.html" -}}
+        <div class="page-content">
+            <p>404.</p>
+            <button><a href="/">Go Home.</a></button>
+        </div>
+        {{- partial "footer.html" -}}
+    </body>
+</html>

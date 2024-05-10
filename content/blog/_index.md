@@ -1,7 +1,7 @@
 ---
 title: "Blog"
-date: 2024-03-31T06:35:23+05:30
+date: 2024-05-02T14:47:22-04:00
 draft: true
+type: "blog"
 ---
 
-This shows a list of blog posts

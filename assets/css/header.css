@@ -1,0 +1,56 @@
+/* Header Container CSS */
+header {
+    display: flex;
+}
+
+.header-logo {
+    margin-left: 0.5rem;
+}
+
+.header-navigation-bar {
+    margin-left: auto;
+}
+
+/* Header Navigation CSS */
+.navigation-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation-menu > li {
+    margin-right: 1rem;
+}
+
+.navigation-menu-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive Header CSS */
+@media screen and (max-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .header-logo {
+        margin: 0 auto;
+        
+    }
+
+    .header-navigation-bar {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .navigation-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .navigation-menu > li {
+        text-align: center;
+    }
+}

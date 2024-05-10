@@ -1,0 +1,45 @@
+/* Footer Container CSS */
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.footer-navigation-bar {
+    display: flex;
+    width: 100%;
+}
+
+/* Social Media CSS */
+.footer-navigation-bar-social-media-menu {
+    flex: 1;
+}
+
+/* Footer Navigation CSS */
+.footer-navigation-menu {
+    display: flex;
+}
+
+.footer-navigation-menu > li {
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+.footer-navigation-menu-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-navigation-bar-secondary-menu {
+    margin-left: auto;
+}
+
+.footer-navigation-bar-secondary-menu ul {
+    display: flex;
+}
+
+.footer-navigation-notice-menu > li {
+    list-style-type: none;
+    font-size: 0.625rem;
+    margin-right: 1rem;
+}

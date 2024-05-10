@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div class="about-content">
+            <div class="about-content-prologue">
+                <p class="about-content-prologue-heading-text">Security is freedom.</p>
+            </div>
+            <div class="about-content-digital-map">
+                <img height="300" width="600" src="/world-map.png"/>
+            </div>
+            <div class="about-content-club-description">
+                <p>We are the official student chapter of the null community at Northeastern University, dedicated to fostering a dynamic environment for cybersecurity education, collaboration, and innovation.</p>
+            </div>
+            <div class="about-content-sections">
+                <div class="resources-section">
+                    <p class="resources-section-heading-text">Resources</p>
+                    <p class="resources-section-text">Peruse our guides about privacy, security, and why it matters.</p>
+                    <button class="resources-section-button"><p>Learn More</p></button>
+                </div>
+                <div class="support-section">
+                    <p class="support-section-heading-text">Support</p>
+                    <p class="support-section-text">Have questions? We're here to help.</p>
+                    <button class="support-section-button"><p>Email Us</p></button>
+                </div>
+                <div class="contact-section">
+                    <p class="contact-section-heading-text">Contact</p>
+                    <p class="contact-section-text">Can't find what you're looking for? Get in touch with us.</p>
+                    <button class="contact-section-button"><p>Contact Us</p></button>
+                </div>
+            </div>
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

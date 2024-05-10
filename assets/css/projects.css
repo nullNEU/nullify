@@ -1,0 +1,121 @@
+/* Projects Container CSS */
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Projects Heading CSS */
+.projects-heading-text p {
+    text-align: center;
+}
+
+/* Projects-metrics Container CSS */
+.projects-metrics-menu {
+    display: flex;
+    gap: 5rem;
+    margin: 2rem auto;
+}
+
+.code-coverage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.security-assessment {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.mean-time-to-patch {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+/* Projects-list Container CSS */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 4rem;
+}
+
+.project-list-item {
+    display: flex;
+}
+
+.project-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-meta p {
+    max-width: 62.5ch;
+    overflow-wrap: break-word;
+}
+
+.project-meta-description {
+    margin-top: 0.25rem;
+}
+
+.project-meta button {
+    align-self: start;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+.project-meta button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Projects Post CSS */
+
+.projects-post-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-post-heading {
+    margin: 0 auto;
+}
+
+.projects-post-metadata {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem auto;
+}
+
+.projects-post-metadata > li {
+    list-style-type: none;
+}
+
+.projects-post-heading-hr {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.article {
+    margin: 1rem auto;
+    max-width: 100ch;
+}

@@ -3,13 +3,13 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="blog-post-content">
-            <h2 class="blog-post-heading">{{ .Title }}</h2>
-            <ul class="blog-post-metadata">
+        <div class="projects-post-content">
+            <h2 class="projects-post-heading">{{ .Title }}</h2>
+            <ul class="projects-post-metadata">
                 <li>{{ .Date.Format "January 2, 2006" }}</li>
                 <li>{{ .ReadingTime }} minutes</li>
             </ul>
-            <hr class="blog-post-heading-hr">
+            <hr class="projects-post-heading-hr">
         </div>
         <article class="article">
             {{ .Content }}

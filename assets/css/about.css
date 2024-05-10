@@ -1,0 +1,180 @@
+/* About Container CSS */
+.about-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading CSS */
+.about-content-prologue {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content-prologue-heading-text {
+    text-align: center;
+    font-weight: 200;
+}
+
+/* Digital Map CSS */
+.about-content-digital-map {
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+/* Description CSS */
+.about-content-club-description {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.about-content-club-description p {
+    max-width: 75ch;
+    text-align: center;
+}
+
+.about-content-sections {
+    display: flex;
+    gap: 200px;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+}
+
+/* Resources Section CSS */
+.resources-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources-section-heading-text {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.resources-section-text {
+    max-width: 25ch;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.resources-section-button {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 5rem;
+    height: 2rem;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.resources-section-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.resources-section-button p {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2px;
+}
+
+/* Support Section CSS */
+.support-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.support-section-heading-text {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.support-section-text {
+    max-width: 15ch;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.support-section-button {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 5rem;
+    height: 2rem;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.support-section-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.support-section-button p {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2px;
+}
+
+/* Contact Section CSS */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section-heading-text {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contact-section-text {
+    max-width: 27ch;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-section-button {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.contact-section-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact-section-button p {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2px;
+}

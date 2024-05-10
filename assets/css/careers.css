@@ -1,0 +1,94 @@
+/* Careers Container CSS */
+.careers-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading CSS */
+.careers-heading-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.careers-heading-text p {
+    text-align: center;
+}
+
+.careers-roles-heading {
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+/* Roles Container CSS */
+.roles {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 35%;
+}
+
+.role-block {
+    margin-bottom: 2rem;
+}
+
+.role-heading-text {
+    text-align: start;
+}
+
+/* Roles-meta Container CSS */
+.role-meta-text {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+}
+
+.role-meta-location {
+    display: flex;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.role-meta-location p {
+    width: 5rem;
+}
+
+.role-meta-team-description {
+    display: flex;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.role-meta-team-description p {
+    width: 11rem;
+}
+
+.role-meta-apply {
+    margin-right: 0;
+    margin-left: 15rem;
+    margin-top: -1rem;
+}
+
+.role-meta-apply button {
+    background-color: white;
+    border-color: black;
+    width: 4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.role-meta-apply button:hover {
+    background-color: black;
+    color: white;
+}
+
+.role-meta-apply button p {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 0.125rem;
+}

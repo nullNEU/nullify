@@ -1,8 +1,6 @@
 ---
-title: "Events by null"
-date: 2024-03-29T06:35:23+05:30
+title: "Events"
+date: 2024-05-02T14:47:12-04:00
 draft: true
 ---
-
-This shows a list of events
 

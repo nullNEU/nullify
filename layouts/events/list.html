@@ -1,21 +1,56 @@
-{{ define "main" }}
-  <main>
-    <article class="page-info" id="event-page">
-      <header>
-        <h1>{{ .Title }}</h1>
-      </header>
-      <!-- "{{ .Content }}" pulls from the Markdown content of the corresponding _index.md -->
-      {{ .Content }}
-    </article>
-    <ul>
-      <!-- Ranges through content/posts/*.md -->
-	  Event list
-      {{ range .Pages }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}</a>
-        </li>
-      {{ end }}
-    </ul>
-  </main>
-{{ end }}
-
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div class="events-content">
+            <div class="events-heading-text">
+                <p>Our speakers work at world-class firms.</p>
+            </div>
+            <div class="company-menu">
+                <div class="company-logo">
+                    <img width="65" height="24" src="/company-logos/akamai.png">
+                </div>
+                <div class="company-logo">
+                    <img width="120" height="24" src="/company-logos/citizens-bank.png">
+                </div>
+                <div class="company-logo">
+                    <img width="110" height="24" src="/company-logos/discover.png">
+                </div>
+                <div class="company-logo">
+                    <img width="24" height="30" src="/company-logos/ernst-and-young.png">
+                </div>
+                <div class="company-logo">
+                    <img width="120" height="24" src="/company-logos/fidelity.png">
+                </div>
+                <div class="company-logo">
+                    <img width="120" height="24" src="/company-logos/raytheon.png">
+                </div>
+            </div>
+            <div class="events-list">
+                <div class="event-list-item">
+                    <div class="event-item-logo">
+                        <img width="100" height="100" src="https://img.icons8.com/ios/100/blueprint.png" alt="blueprint"/>
+                    </div>
+                    <div class="event-meta">
+                        <p class="event-meta-title">Project Title</p>
+                        <p class="event-meta-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar.</p>
+                        <button><p>Learn More</p></button>
+                    </div>
+                </div>
+                <div class="event-list-item">
+                    <div class="event-item-logo">
+                        <img width="100" height="100" src="https://img.icons8.com/ios/100/blueprint.png" alt="blueprint"/>
+                    </div>
+                    <div class="event-meta">
+                        <p class="event-meta-title">Project Title</p>
+                        <p class="event-meta-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar.</p>
+                        <button><p>Learn More</p></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

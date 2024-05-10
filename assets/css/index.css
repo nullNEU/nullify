@@ -1,83 +1,201 @@
-body {
-	overflow-x: hidden;
-	font-family: "Montserrat", sans-serif;
-	padding: 0;
-	margin: 0;
-	min-height: 100vh;
+/* Index Container CSS */
+.index-content {
+    display: flex;
+    flex-direction: column;
+    height: 2.5rem;
+    margin: 1rem auto;
 }
 
-navbar {
-	height: 6vh;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 2rem;
+/* Keyword Carousel */
+.keyword-carousel {
+    margin: 5rem auto;
+}
 
-	ul {
-		gap: 1.5rem!important;
+.keyword-list-item {
+    list-style-type: none;
+}
+
+/* Activities Menu CSS */
+.activities-menu {
+    display: flex;
+    gap: 10rem;
+    margin-top: 5rem;
+}
+
+/* Code Community CSS*/
+.activities-menu-code {
+    display: flex;
+    flex-direction: column;
+}
+
+.activities-menu-code p {
+    text-align: center;
+}
+
+.activities-menu-code a {
+    text-decoration: none;
+    color: black;
+}
+
+.activities-menu-code button {
+    align-self: start;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+.activities-menu-code button:hover {
+    background-color: black;
+    color: white;
+}
+
+.activities-menu-code a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* Competition Community CSS*/
+.activities-menu-competition {
+    display: flex;
+    flex-direction: column;
+}
+
+.activities-menu-competition p {
+    text-align: center;
+}
+
+.activities-menu-competition a {
+    text-decoration: none;
+    color: black;
+}
+
+.activities-menu-competition button {
+    align-self: start;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+.activities-menu-competition button:hover {
+    background-color: black;
+    color: white;
+}
+
+.activities-menu-competition a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* Activities Community CSS*/
+.activities-menu-community {
+    display: flex;
+    flex-direction: column;
+}
+
+.activities-menu-community p {
+    text-align: center;
+}
+
+.activities-menu-community a {
+    text-decoration: none;
+    color: black;
+}
+
+.activities-menu-community button {
+    align-self: start;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+.activities-menu-community button:hover {
+    background-color: black;
+    color: white;
+}
+
+.activities-menu-community a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*
+
+@keyframes change {
+	0%, 20%, 100% {
+		transform: translate3d(0, 0, 0);
+   }
+	30%, 40% {
+		transform: translate3d(0, -100%, 0);
+   }
+	50%, 60% {
+		transform: translate3d(0, -200%, 0);
+	}
+	70%, 80% {
+		transform: translate3d(0, -300%, 0);
+	}
+	90%, 99% {
+		transform: translate3d(0, -400%, 0);
 	}
 }
 
-footer {
-	height: 9vh;
-	background-color: rgb(229, 229, 229);
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 2rem;
-
-	ul {
-		gap: 1.5rem!important;
-	}
-
-	i {
-		&:hover {
-			transform: translateY(-2px);
-		}
-	}
+.keyword-carousel {
+    font-size: 1rem;
 }
 
-.sanchez {
-	font-family: "Sanchez", serif;
-	font-weight: 400;
-  	font-style: normal;
+.keyword-list {
+    margin-top: 0;
+    text-align: center;	
 }
 
-a {
-	color: inherit;
-	text-decoration: none;
+.keyword-list-item {
+    line-height: 50px;
+    white-space: nowrap;
+    margin: 0;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
-a:hover {
-	text-decoration: underline;
+.keyword-carousel ul > li {
+    list-style-type: none;
 }
 
-.underline {
-	text-decoration: underline;
-}
-
-.wrapper {
-	min-height: 95vh;
-	display: flex;
-	align-items: center;
-}
-
-.flex {
-	display: flex;
-	gap: 1rem;
-}
-
-.flex-wrap {
-	flex-wrap: wrap;
-}
-
-.align-items-center {
-	align-items: center;
-}
-
-.justify-content-center {
-	justify-content: center;
-}
-
-.grid {
-	display: grid;
-	gap: 1rem;
-}
+*/

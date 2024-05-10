@@ -1,0 +1,72 @@
+/* Events Container CSS */
+.events-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.events-heading-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.events-heading-text p {
+    text-align: center;
+}
+
+/* Menu Container CSS */
+.company-menu {
+    display: flex;
+    gap: 4rem;
+    align-items: baseline;
+    margin: 2rem auto;
+}
+
+/* List Container CSS */
+.events-list {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    gap: 4rem;
+}
+
+.event-list-item {
+    display: flex;
+}
+
+.event-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-meta p {
+    max-width: 62.5ch;
+    overflow-wrap: break-word;
+}
+
+.event-meta-description {
+    margin-top: 0.25rem;
+}
+
+.event-meta button {
+    align-self: start;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 5rem;
+    height: 1.5rem;
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 0.75rem;
+}
+
+.event-meta button:hover {
+    background-color: black;
+    color: white;
+}

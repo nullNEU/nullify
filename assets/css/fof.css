@@ -1,0 +1,53 @@
+/* A separate reset mechanism is required as the 404.html page does NOT import from /_default/baseof.html */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.page-content p {
+    margin: 0 auto;
+    font-size: 50px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.page-content button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.page-content button a {
+    text-decoration: none;
+    color: inherit;
+}

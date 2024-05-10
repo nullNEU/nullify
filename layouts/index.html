@@ -1,18 +1,36 @@
-{{ define "main" }}
-<div class="home-content-wrapper">
-	<div class="matters-wrapper sanchez home-content-item">
-		<ul class="content-container-list">
-			<li class="matters-text content-container-list-item">Security</li>
-			<li class="matters-text content-container-list-item">Privacy</li>
-			<li class="matters-text content-container-list-item">Cyber awareness</li>
-			<li class="matters-text content-container-list-item">OSINT</li>
-			<li class="matters-text content-container-list-item">Encryption</li>
-		</ul>
-	</div>
-	<div class="card-wrapper flex home-content-item">
-		{{ range $homecard := .Site.Params.home.homecard }}
-			{{- partial "homecard.html" ( dict "icon" $homecard.card.icon "text" $homecard.card.header "summary" $homecard.card.summary "linkText" $homecard.card.linkText "link" $homecard.card.link ) -}}
-		{{ end }}
-	</div>
-</div>
-{{ end }}
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        
+        <div class="index-content">
+            <div class="keyword-carousel">
+                <ul class="keyword-list">
+                    
+                    <li class="keyword-list-item">Privacy</li>
+                    
+                </ul>
+            </div>
+            <div class="activities-menu">
+                <div class="activities-menu-code">
+                    <img width="75" height="75" src="https://img.icons8.com/ios/100/console.png" alt="console"/>
+                    <p>Develop</p>
+                    <button><a href="/projects">Learn More</a></button>
+                </div>
+                <div class="activities-menu-competition">
+                    <img width="75" height="75" src="https://img.icons8.com/ios/100/shield.png" alt="shield"/>
+                    <p>Compete</p>
+                    <button><a href="">Join Us</a></button>
+                </div>
+                <div class="activities-menu-community">
+                    <img width="75" height="75" src="https://img.icons8.com/ios/100/conference-call--v1.png" alt="conference-call--v1"/>
+                    <p>Network</p>
+                    <button><a href="/about">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
