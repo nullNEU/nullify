@@ -2,25 +2,3 @@ baseURL: "/"
 languageCode: "en-us"
 title: "Null NEU"
 enableRobotsTXT: true
-
-params:
-  home:
-    homecard:
-      - card:
-          header: "code"
-          icon: "bx bx-code-alt"
-          summary: "We build secure software"
-          linkText: "Learn more"
-          link: "/projects"
-      - card:
-          header: "hack"
-          icon: "bx bxs-terminal"
-          summary: "We organise and play CTFs"
-          linkText: "Learn more"
-          link: "/events"
-      - card:
-          header: "network"
-          icon: "bx bxs-network-chart"
-          summary: "We are an open community"
-          linkText: "Learn more"
-          link: "/about"
