@@ -1,13 +1,31 @@
 <header>
-    <!-- Header Navigation Elements -->
-    <div class="header-logo">
-        <a href="/"><img width="50" height="50" src="https://img.icons8.com/ios/50/block.png" alt="block"/></a>
+    <div class="hamburger" onclick="showMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
     </div>
-    <div class="header-navigation-bar">
-        <ul class="navigation-menu">
+    <!-- Header Navigation Elements -->
+    <div class="navbar">
+        <div class="header-logo">
+            <a href="/"><img width="40" height="40" src="/images/null_logo.svg" alt="Null Logo"/></a>
+        </div>
+        <ul class="navigation-menu closed">
             <li><a class="navigation-menu-link" href="/blog">Blog</a></li>
             <li><a class="navigation-menu-link" href="/projects">Projects</a></li>
             <li><a class="navigation-menu-link" href="/events">Events</a></li>
         </ul>
     </div>
 </header>
+<script>
+    function showMenu() {
+        let menu = document.querySelector('.navigation-menu');
+        let hamburger = document.querySelector(".hamburger");
+        if (menu.classList.contains("closed")) {
+            menu.classList.remove("closed");
+            hamburger.classList.add("close");
+        } else {
+            menu.classList.add("closed");
+            hamburger.classList.remove("close");
+        }
+    }
+</script>

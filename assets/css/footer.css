@@ -3,6 +3,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: auto;
+    padding: 1rem;
 }
 
 .footer-navigation-bar {
@@ -40,6 +41,5 @@ footer {
 
 .footer-navigation-notice-menu > li {
     list-style-type: none;
-    font-size: 0.625rem;
     margin-right: 1rem;
 }
