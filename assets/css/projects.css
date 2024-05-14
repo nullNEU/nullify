@@ -89,6 +89,11 @@
     color: white;
 }
 
+.project-meta button a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Projects Post CSS */
 
 .projects-post-content {

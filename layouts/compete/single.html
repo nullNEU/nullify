@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div class="compete-content">
+            <div class="compete-heading-text">
+                <p>We think CTFs are fun.</p>
+            </div>
+            <div class="compete-list">
+                {{ .Content }}
+            </div>
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>

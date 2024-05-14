@@ -34,7 +34,7 @@
 
 .activities-menu-code a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 .activities-menu-code button {
@@ -61,11 +61,6 @@
     color: white;
 }
 
-.activities-menu-code a:hover {
-    text-decoration: none;
-    color: white;
-}
-
 /* Competition Community CSS*/
 .activities-menu-competition {
     display: flex;
@@ -78,7 +73,7 @@
 
 .activities-menu-competition a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 .activities-menu-competition button {
@@ -105,11 +100,6 @@
     color: white;
 }
 
-.activities-menu-competition a:hover {
-    text-decoration: none;
-    color: white;
-}
-
 /* Activities Community CSS*/
 .activities-menu-community {
     display: flex;
@@ -122,7 +112,7 @@
 
 .activities-menu-community a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 .activities-menu-community button {
@@ -148,54 +138,3 @@
     background-color: black;
     color: white;
 }
-
-.activities-menu-community a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-
-
-/*
-
-@keyframes change {
-	0%, 20%, 100% {
-		transform: translate3d(0, 0, 0);
-   }
-	30%, 40% {
-		transform: translate3d(0, -100%, 0);
-   }
-	50%, 60% {
-		transform: translate3d(0, -200%, 0);
-	}
-	70%, 80% {
-		transform: translate3d(0, -300%, 0);
-	}
-	90%, 99% {
-		transform: translate3d(0, -400%, 0);
-	}
-}
-
-.keyword-carousel {
-    font-size: 1rem;
-}
-
-.keyword-list {
-    margin-top: 0;
-    text-align: center;	
-}
-
-.keyword-list-item {
-    line-height: 50px;
-    white-space: nowrap;
-    margin: 0;
-    animation-name: change;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-.keyword-carousel ul > li {
-    list-style-type: none;
-}
-
-*/

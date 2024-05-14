@@ -32,7 +32,7 @@
 
 .blog-post-item-meta a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 
 .blog-post-item-description {
@@ -79,6 +79,7 @@
     display: flex;
     gap: 1rem;
     margin: 0.5rem auto;
+    margin-bottom: 1rem;
 }
 
 .blog-post-metadata > li {
@@ -92,5 +93,25 @@
 
 .article {
     margin: 1rem auto;
-    max-width: 100ch;
+    max-width: 50%;
 }
+
+@media screen and (max-width: 768px) {
+
+    .blog-post-heading-hr {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .blog-post-metadata {
+        display: flex;
+        gap: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    .article {
+        margin: 1rem auto;
+        max-width: 50%;
+        margin-left: 25%;
+    }
+  }
