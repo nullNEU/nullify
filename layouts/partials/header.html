@@ -1,31 +1,15 @@
 <header>
-    <div class="hamburger" onclick="showMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
     <!-- Header Navigation Elements -->
-    <div class="navbar">
-        <div class="header-logo">
-            <a href="/"><img width="40" height="40" src="/images/null_logo.svg" alt="Null Logo"/></a>
-        </div>
-        <ul class="navigation-menu closed">
-            <li><a class="navigation-menu-link" href="/blog">Blog</a></li>
-            <li><a class="navigation-menu-link" href="/projects">Projects</a></li>
-            <li><a class="navigation-menu-link" href="/events">Events</a></li>
-        </ul>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+    </label>
+    <div class="header-logo">
+        <a href="/"><img width="40" height="40" src="/images/null_logo.svg" alt="Null Logo"/></a>
     </div>
+    <ul class="navigation-menu">
+        <li><a class="navigation-menu-link" href="/blog">Blog</a></li>
+        <li><a class="navigation-menu-link" href="/projects">Projects</a></li>
+        <li><a class="navigation-menu-link" href="/events">Events</a></li>
+    </ul>
 </header>
-<script>
-    function showMenu() {
-        let menu = document.querySelector('.navigation-menu');
-        let hamburger = document.querySelector(".hamburger");
-        if (menu.classList.contains("closed")) {
-            menu.classList.remove("closed");
-            hamburger.classList.add("close");
-        } else {
-            menu.classList.add("closed");
-            hamburger.classList.remove("close");
-        }
-    }
-</script>
