@@ -2,6 +2,7 @@
 .blog-list-content {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 /* Blog Heading CSS */

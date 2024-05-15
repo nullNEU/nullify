@@ -2,6 +2,7 @@
 .events-content {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 .events-heading-text {
@@ -19,6 +20,14 @@
     gap: 4rem;
     align-items: baseline;
     margin: 2rem auto;
+    flex-flow: wrap;
+}
+
+@media screen and (max-width: 800px) {
+    .company-menu {
+        padding: 1rem;
+        justify-content: center;
+    }
 }
 
 /* List Container CSS */

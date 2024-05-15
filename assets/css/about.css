@@ -2,6 +2,7 @@
 .about-content {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 /* Heading CSS */
@@ -21,6 +22,12 @@
     margin-top: 3rem;
 }
 
+@media screen and (max-width: 800px) {
+    .about-content-digital-map img {
+        height: 200px;
+    }
+}
+
 /* Description CSS */
 .about-content-club-description {
     margin: 0 auto;
@@ -37,6 +44,13 @@
     gap: 200px;
     margin: 0 auto;
     margin-top: 3.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .about-content-sections {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 /* Resources Section CSS */

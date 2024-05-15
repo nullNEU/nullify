@@ -2,6 +2,7 @@
 .careers-content {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 
 /* Heading CSS */
@@ -33,6 +34,12 @@
 
 .role-heading-text {
     text-align: start;
+}
+
+@media screen and (max-width: 800px) {
+    .roles {
+        width: 90%;
+    }
 }
 
 /* Roles-meta Container CSS */
