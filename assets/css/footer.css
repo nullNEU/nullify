@@ -39,7 +39,8 @@ footer {
     display: flex;
 }
 
-.footer-navigation-notice-menu > li {
-    list-style-type: none;
+.footer-navigation-notice-menu a {
+    text-decoration: none;
+    color: black;
     margin-right: 1rem;
 }
