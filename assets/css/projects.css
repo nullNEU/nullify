@@ -50,6 +50,7 @@
 
 .project-list-item {
     display: flex;
+    gap: 1rem;
 }
 
 .project-meta {

@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    flex-grow: 1;
 }
 
 .events-heading-text {
@@ -35,11 +36,12 @@
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
-    gap: 4rem;
+    gap: 5rem;
 }
 
 .event-list-item {
     display: flex;
+    gap: 1rem;
 }
 
 .event-meta {
@@ -78,4 +80,9 @@
 .event-meta button:hover {
     background-color: black;
     color: white;
+}
+
+.event-meta button a {
+    text-decoration: none;
+    color: inherit;
 }

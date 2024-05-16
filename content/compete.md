@@ -6,7 +6,4 @@ type: "compete"
 ---
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper nibh eget odio interdum, vitae laoreet urna pretium. Nullam non mi euismod, laoreet dui quis, vehicula magna. Sed id magna nec turpis porta blandit. Vivamus auctor magna eget risus pulvinar tempor.
-
-\
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper nibh eget odio interdum, vitae laoreet urna pretium. Nullam non mi euismod, laoreet dui quis, vehicula magna. Sed id magna nec turpis porta blandit. Vivamus auctor magna eget risus pulvinar tempor.
+We participate in CTF competitions at local and global events, get in touch with us to learn more!

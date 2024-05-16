@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    margin: auto;
 }
 
 /* Heading CSS */
@@ -112,7 +113,7 @@
 }
 
 .support-section-text {
-    max-width: 15ch;
+    max-width: 25ch;
     overflow-wrap: break-word;
     text-align: center;
     margin-top: 1rem;
@@ -141,9 +142,14 @@
     color: white;
 }
 
-.support-section-button p {
-    text-align: center;
-    margin: 0 auto;
+.support-section-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.support-section-button a {
+    text-decoration: none;
+    color: inherit;
     padding-bottom: 2px;
 }
 
@@ -187,8 +193,8 @@
     color: white;
 }
 
-.contact-section-button p {
-    text-align: center;
-    margin: 0 auto;
+.contact-section-button a {
+    text-decoration: none;
+    color: inherit;
     padding-bottom: 2px;
 }

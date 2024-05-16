@@ -13,7 +13,7 @@
                     <p>Code Coverage</p>
                 </div>
                 <div class="security-assessment">
-                    <p>10+</p>
+                    <p>Continuous</p>
                     <p>Security Assessments</p>
                 </div>
                 <div class="mean-time-to-patch">
@@ -31,8 +31,7 @@
                     <div class="project-meta">
                         <a class="project-meta-title">{{ .Title }}</a>
                         <p class="project-meta-description">{{ .Summary }}</p>
-                        <button><a href="{{ .RelPermalink }}">Learn More</a></button>
-                        
+                        <button><a href="{{ .Page.Params.link }}">Learn More</a></button>
                     </div>
                 </div>
                 {{ end }}

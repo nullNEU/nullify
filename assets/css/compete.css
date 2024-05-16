@@ -15,7 +15,7 @@
 
 .compete-list {
     display: flex;
-    flex-direction: column;
-    margin: auto 25%;
-    max-width: 50%;
+    margin: auto;
+    max-width: 50ch;
+    text-align: center;
 }

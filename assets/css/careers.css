@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    width: 100%;
 }
 
 /* Heading CSS */
@@ -25,11 +26,11 @@
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
-    width: 35%;
+    width: 90%;
 }
 
 .role-block {
-    margin-bottom: 2rem;
+    margin: 1rem auto;
 }
 
 .role-heading-text {
@@ -71,7 +72,7 @@
 
 .role-meta-apply {
     margin-right: 0;
-    margin-left: 15rem;
+    margin-left: 3%;
     margin-top: -1rem;
 }
 

@@ -28,27 +28,18 @@
                 </div>
             </div>
             <div class="events-list">
+                {{ range .CurrentSection.Pages }}
                 <div class="event-list-item">
                     <div class="event-item-logo">
-                        <img width="100" height="100" src="https://img.icons8.com/ios/100/blueprint.png" alt="blueprint"/>
+                        <img width="75" height="75" src="https://img.icons8.com/ios/100/today.png" alt="today"/>
                     </div>
                     <div class="event-meta">
-                        <p class="event-meta-title">Project Title</p>
-                        <p class="event-meta-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar.</p>
-                        <button><p>Learn More</p></button>
+                        <p class="event-meta-title">{{ .Title }}</p>
+                        <p class="event-meta-description">{{ .Summary }}</p>
+                        <button><a href="{{ .RelPermalink }}">Learn More</a></button>
                     </div>
                 </div>
-                <div class="event-list-item">
-                    <div class="event-item-logo">
-                        <img width="100" height="100" src="https://img.icons8.com/ios/100/blueprint.png" alt="blueprint"/>
-                    </div>
-                    <div class="event-meta">
-                        <p class="event-meta-title">Project Title</p>
-                        <p class="event-meta-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod quis viverra nibh cras pulvinar.</p>
-                        <button><p>Learn More</p></button>
-                    </div>
-                </div>
-                
+                {{ end }}
             </div>
         </div>
         {{- partial "footer.html" . -}}
