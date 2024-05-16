@@ -1,7 +1,7 @@
 ---
 title: "Compete"
 date: 2024-05-13T20:32:13-04:00
-draft: true
+draft: false
 type: "compete"
 ---
 

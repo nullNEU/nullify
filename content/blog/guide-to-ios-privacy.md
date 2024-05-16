@@ -1,7 +1,7 @@
 ---
 title: "Guide to iOS Privacy"
 date: 2024-05-05T11:48:35-04:00
-draft: true
+draft: false
 summary: "This guide is designed to enhance the security and privacy of iPhones and iPads for users at all levels, from beginners to advanced."
 blog_image: "/images/guide-icon.png"
 ---
