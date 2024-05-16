@@ -10,6 +10,7 @@
 {{ $eventsCSS := resources.Get "css/events.css" }}
 {{ $indexCSS := resources.Get "css/index.css" }}
 {{ $competeCSS := resources.Get "css/compete.css" }}
+{{ $privacyPolicyCSS := resources.Get "css/privacy-policy.css" }}
 
 <head>
     <title>{{- .Title -}}</title>
@@ -31,6 +32,7 @@
     <link type="text/css" rel="stylesheet" href="{{ $eventsCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $indexCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $competeCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $privacyPolicyCSS.RelPermalink }}"/>
 
     <!-- Generic Header Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
