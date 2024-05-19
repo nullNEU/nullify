@@ -25,7 +25,6 @@ body {
 .page-content p {
     margin: 0 auto;
     font-size: 50px;
-    font-family: "Barlow Condensed", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -42,7 +41,6 @@ body {
     cursor: pointer;
     border-radius: 12px;
     font-size: 0.75rem;
-    font-family: "Barlow Condensed", sans-serif;
     font-weight: 200;
     font-style: normal;
 }

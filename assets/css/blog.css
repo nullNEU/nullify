@@ -45,11 +45,9 @@
     border-color: black;
     border-style: solid;
     border-radius: 10px;
-    width: 7rem;
-    height: 1.5rem;
+    padding: 4px 7px;
     cursor: pointer;
     transition-duration: 0.4s;
-    font-family: "Barlow Condensed", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
@@ -98,7 +96,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
     .blog-post-heading-hr {
         width: 50%;
         margin: 0 auto;
@@ -112,7 +109,7 @@
 
     .article {
         margin: 1rem auto;
-        max-width: 50%;
+        max-width: 80%;
         margin-left: 25%;
     }
   }

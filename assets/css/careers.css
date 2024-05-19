@@ -78,14 +78,13 @@
 
 .role-meta-apply button {
     background-color: white;
-    border-color: black;
-    width: 4rem;
+    border: 1px solid black;
+    padding: 4px 7px;
     border-radius: 10px;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     transition-duration: 0.4s;
-    font-family: "Barlow Condensed", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
