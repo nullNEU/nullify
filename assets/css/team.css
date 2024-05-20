@@ -42,6 +42,11 @@
     text-align: center;
 }
 
+#team-mastodon {
+    height: 22px;
+    width: 22px;
+}
+
 /* Team Secondary Row CSS */
 .team-secondary-row {
     display: flex;
@@ -54,6 +59,7 @@
 .team-primary-row img {
     height: 200px;
     width: 200px;
+    margin-top: 0.5rem;
 }
 
 .team-secondary-row img {
