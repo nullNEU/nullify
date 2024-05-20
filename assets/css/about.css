@@ -40,6 +40,11 @@
     text-align: center;
 }
 
+.about-content-club-description a {
+    text-decoration: underline;
+    color: black;
+}
+
 .about-content-sections {
     display: flex;
     gap: 200px;
