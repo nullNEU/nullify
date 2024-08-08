@@ -1,6 +1,5 @@
 /* Header Container CSS */
 header {
-    width: 100%;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -11,17 +10,22 @@ header {
     margin-left: 0.5rem;
 }
 
+.header-logo:hover {
+    transform: scale(0.9);
+    transition: all 200ms ease-in-out;
+}
+
 /* Hamburger styling */
 .menu-button-container {
     display: none;
     height: 100%;
     width: 30px;
-    cursor: pointer;
+    color: var(--text-color-white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-  
+
 #menu-toggle {
     display: none;
 }
@@ -30,7 +34,7 @@ header {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #1d1d1d;
+  background-color: var(--text-color-white);
   cursor: pointer;
   position: absolute;
   height: 4px;
@@ -55,7 +59,7 @@ header {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+    background-color: var(--background-color);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
@@ -65,19 +69,12 @@ header {
 
 /* Header Navigation CSS */
 .navigation-menu {
-    letter-spacing: 2px;
     display: flex;
-    list-style-type: none;
 }
 
 .navigation-menu > li {
     margin-right: 1rem;
     overflow: hidden;
-}
-
-.navigation-menu-link {
-    text-decoration: none;
-    color: black;
 }
 
 /* Responsive Header CSS */
@@ -88,16 +85,17 @@ header {
     .navigation-menu {
         position: absolute;
         top: 0;
-        margin-top: 60px;
+        padding: 0;
+        margin-top: 70px;
         left: 0;
         flex-direction: column;
-        background-color: #1d1d1d;
+        background-color: var(--text-color-gray);
+        color: var(--background-color);
         width: 100%;
         justify-content: center;
         align-items: center;
     }
     #menu-toggle:checked ~ .navigation-menu li {
-        border: 1px solid #333;
         height: 2.5em;
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -112,12 +110,9 @@ header {
     .navigation-menu > li {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
-        color: white;
-    }
-    .navigation-menu-link {
-        color: white;
     }
 }
