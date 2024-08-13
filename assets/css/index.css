@@ -3,6 +3,7 @@
     --text-color-white: #F9F9F9;
     --text-color-gray: #DBDBDB;
     --text-color-dark-gray: #A8A8A8;
+    --map-area-background: #313131;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     font-family: 'Public Sans', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color-gray);
+    overflow-x: hidden;
 }
 
 a {

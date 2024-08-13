@@ -1,5 +1,6 @@
 <!-- CSS Objects -->
 {{ $indexCSS := resources.Get "css/index.css" }}
+{{ $homeCSS := resources.Get "css/home.css" }}
 {{ $headerCSS := resources.Get "css/header.css" }}
 {{ $footerCSS := resources.Get "css/footer.css" }}
 
@@ -13,6 +14,7 @@
 
     <!-- CSS Stylesheet Inclusions -->
     <link type="text/css" rel="stylesheet" href="{{ $indexCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $homeCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $headerCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $footerCSS.RelPermalink }}"/>
 
