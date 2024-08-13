@@ -1,3 +1,59 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    font-family: "Inconsolata";
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+.home h2 {
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    font-family: "Inconsolata";
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 2rem;
+}
+
+.home .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-card {
+    background-color: var(--map-area-background);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.home-card:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.home-card .home-card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.home-card .home-card-text p {
+    width: 60%;
+    margin: 0;
+}
+
 .map-area {
     min-height: 100vh;
     background-color: var(--map-area-background);
@@ -39,6 +95,18 @@
 }
 
 @media screen and (max-width: 700px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-card {
+        width: 80%;
+    }
+
     .map-image {
         width: 100%;
         height: 500px;

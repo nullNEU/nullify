@@ -3,6 +3,16 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
+
+        <div class="home">
+            <h1>security</h1>
+            <h2>matters to us</h2>
+            <div class="cards">
+                {{- partial "homecard.html" ( dict "iconSrc" "/icons/dev.svg" "text" "Secure software development" "link" "/projects" ) -}}
+                {{- partial "homecard.html" ( dict "iconSrc" "/icons/connect.svg" "text" "Creating impactful connections" "link" "/events" ) -}}
+                {{- partial "homecard.html" ( dict "iconSrc" "/icons/train.svg" "text" "Train together, win together" "link" "/events" ) -}}
+            </div>
+        </div>
         
         <div class="map-area">
             <div class="map-image"></div>
