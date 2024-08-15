@@ -15,3 +15,10 @@
 .company-strip-logo {
     height: 30px;
 }
+
+.event-status-tag {
+    width: fit-content;
+    margin: 0;
+    margin-bottom: 5px;
+    color: var(--null-red);
+}

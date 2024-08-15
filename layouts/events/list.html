@@ -20,10 +20,12 @@
                 {{ range .CurrentSection.Pages }}
                 {{- partial "listcard.html"
                     ( dict
+                        "cardType" "event"
                         "cardTitle" .Page.Title
-                        "cardDescription" .Page.Summary
-                        "buttonLink" ""
-                        "buttonText" "Sign up now"
+                        "cardDescription" .Page.Summary 
+                        "eventDate" .Params.EventDate
+                        "buttonLink" .Params.EventLink
+                        "buttonText" "View on LinkedIn"
                     )
                 -}}
                 {{ end }}

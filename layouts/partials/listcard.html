@@ -5,7 +5,10 @@
     >
     </div> 
     <div class="list-card-content">
-        <h3 class="list-card-content-title">{{ .cardTitle }}</h3>
+        {{ if eq .cardType "event" }} {{- partial "eventstatus.html" ( dict "eventDate" .eventDate ) -}} {{ end }}
+        <h3 class="list-card-content-title">
+            {{ .cardTitle }}
+        </h3>
         <p class="list-card-content-description">{{ .cardDescription }}</p>
         <a class="list-card-link" href="{{ .buttonLink }}" target="_blank">
             <button>{{ .buttonText }}</button>
