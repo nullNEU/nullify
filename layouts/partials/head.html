@@ -3,6 +3,7 @@
 {{ $homeCSS := resources.Get "css/home.css" }}
 {{ $headerCSS := resources.Get "css/header.css" }}
 {{ $footerCSS := resources.Get "css/footer.css" }}
+{{ $eventsCSS := resources.Get "css/events.css" }}
 
 <head>
     <title>{{- .Title -}}</title>
@@ -17,6 +18,7 @@
     <link type="text/css" rel="stylesheet" href="{{ $homeCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $headerCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $footerCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $eventsCSS.RelPermalink }}"/>
 
     <!-- Generic Header Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />

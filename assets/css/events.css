@@ -1,0 +1,17 @@
+.speakers-from {
+    color: var(--text-color-dark-gray);
+    letter-spacing: 5px;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.company-strip {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.company-strip-logo {
+    height: 30px;
+}
