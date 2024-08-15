@@ -1,0 +1,14 @@
+<div class="list-card">
+    <div
+        style="background: url('/images/event-cover.svg') no-repeat center center; background-size: cover"
+        class="list-card-image"
+    >
+    </div> 
+    <div class="list-card-content">
+        <h3 class="list-card-content-title">{{ .cardTitle }}</h3>
+        <p class="list-card-content-description">{{ .cardDescription }}</p>
+        <a class="list-card-link" href="{{ .buttonLink }}" target="_blank">
+            <button>{{ .buttonText }}</button>
+        </a>
+    </div>
+</div>
