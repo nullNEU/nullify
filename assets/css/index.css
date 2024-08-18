@@ -75,7 +75,7 @@ button {
     display: grid;
     grid-template-columns: 10% 90%;
     gap: 1rem;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .list-card-image {  
