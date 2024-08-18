@@ -3,28 +3,38 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="blog-list-content">
-            <div class="blog-list-heading-text">
-                <p>Insights, Guides, and Announcements from nullNEU.</p>
-            </div>
-            <div class="blog-post-menu">
-                {{ range .CurrentSection.Pages }}
-                <div class="blog-post-item">
-                    <div class="blog-post-item-photo">
-                        <img width="96" height="96" src="{{ .Params.blog_image }}" alt="My Post Image">
-                    </div>
-                    <div class="blog-post-item-meta">
-                        <a href="{{ .RelPermalink }}"><p class="blog-post-item-title">{{ .Title }}</p></a>
-                        <p class="blog-post-item-description">{{ .Summary }}<p>
-                        <button>
-                            <a href="{{ .RelPermalink }}"><p>Continue Reading</p></a>
-                        </button>
-                    </div>
+        <div class="page-content">
+            {{- partial "pageheader.html" ( dict "header" "We write." "subHeader" "Insights. Guides. More from nullNEU" ) -}}
+            <div class="page-content-separator"></div>
 
-                </div>
+            <div class="page-list">
+
+                {{ range .CurrentSection.Pages }}
+
+                {{- partial "listcard.html"
+
+                    ( dict
+
+                        "cardType" "blog"
+
+                        "cardTitle" .Page.Title
+
+                        "cardDescription" .Page.Summary
+
+                        "buttonLink" .RelPermalink
+
+                        "buttonText" "Read more"
+
+                    )
+
+                -}}
+
                 {{ end }}
-            </div>
+
+             </div>
+
         </div>
+
         {{- partial "footer.html" . -}}
     </body>
 </html>
