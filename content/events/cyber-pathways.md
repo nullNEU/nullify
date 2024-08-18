@@ -6,4 +6,3 @@ summary: Northeastern cybersecurity alumni joins a panel discussion to share the
 eventLink: https://www.linkedin.com/events/cyberpathways-navigatingfull-ti7182188625147613185/
 eventDate: 2024-04-12T19:00:00-04:00
 ---
----

@@ -6,4 +6,3 @@ summary: The Boston Security Meetup June 2024 explores the basics of Purple Team
 eventLink: https://www.linkedin.com/events/nullneuxbostonsecuritymeetup-ar7207161177062227968/
 eventDate: 2024-06-20T18:30:00-04:00
 ---
----

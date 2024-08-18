@@ -6,4 +6,3 @@ summary: null NEU participates in the Preparedness Day and Scam Prevention event
 eventLink: https://www.linkedin.com/events/preparedness-scampreventionday7174920863861899264/
 eventDate: 2024-03-21T10:00:00-04:00
 ---
----

@@ -6,4 +6,3 @@ summary: null NEU collaborates with GDSC Northeastern University to present an i
 eventLink: https://www.linkedin.com/events/securityawarenessworkshop7158264691570393088/
 eventDate: 2024-02-02T17:00:00-04:00
 ---
----

@@ -6,4 +6,3 @@ summary: Patrick Laverty, of Compass Solutions talks about his adventures penetr
 eventLink: https://www.linkedin.com/events/canahackermurderyourcity7161083079237779457/
 eventDate: 2024-02-16 18:00:00 -0400
 ---
----
