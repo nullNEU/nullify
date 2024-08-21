@@ -1,0 +1,77 @@
+.careers-join-the-chat {
+    display: inline-block;
+    gap: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    color: var(--text-color-gray);
+    border: 1px solid var(--text-color-gray);
+}
+
+.careers-join-the-chat:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
+}
+
+.careers-join-the-chat img {
+    filter: invert(100);
+}
+
+.careers-empty-list {
+    padding: 15px;
+    background-color: var(--map-area-background);
+    border-radius: 15px;
+    color: var(--text-color-dark-gray);
+    text-align: center;
+}
+
+.careers-list-item {
+    padding: 15px 10px;
+    border-bottom: 3px solid var(--map-area-background);
+}
+
+.careers-list-item-top,
+.careers-list-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px 0;
+}
+
+.careers-list-item-top p,
+.careers-list-item-bottom pre {
+    margin: 0;
+}
+
+.careers-list-item-top p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--null-red);
+}
+
+.careers-list-item-top p:last-child {
+    font-size: 0.9rem;
+    color: var(--text-color-dark-gray);
+}
+
+.careers-list-item-bottom pre {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+    .careers-list-item-bottom {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .careers-list-item-top {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .careers-list-item-top, .careers-list-item-bottom {
+        gap: 10px;
+    }
+}
