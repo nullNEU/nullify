@@ -20,7 +20,7 @@ header {
     display: none;
     height: 100%;
     width: 30px;
-    color: var(--text-color-white);
+    color: var(--base-white);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@ header {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: var(--text-color-white);
+  background-color: var(--base-white);
   cursor: pointer;
   position: absolute;
   height: 4px;
@@ -59,7 +59,7 @@ header {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-    background-color: var(--background-color);
+    background-color: var(--base-black);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
@@ -89,8 +89,8 @@ header {
         margin-top: 70px;
         left: 0;
         flex-direction: column;
-        background-color: var(--text-color-gray);
-        color: var(--background-color);
+        background-color: var(--base-gray);
+        color: var(--base-black);
         width: 100%;
         justify-content: center;
         align-items: center;

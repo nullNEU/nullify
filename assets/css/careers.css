@@ -5,8 +5,8 @@
     margin-top: 10px;
     border: none;
     border-radius: 15px;
-    color: var(--text-color-gray);
-    border: 1px solid var(--text-color-gray);
+    color: var(--base-gray);
+    border: 1px solid var(--base-gray);
 }
 
 .careers-join-the-chat:hover {
@@ -21,15 +21,15 @@
 
 .careers-empty-list {
     padding: 15px;
-    background-color: var(--map-area-background);
+    background-color: var(--dark-gray);
     border-radius: 15px;
-    color: var(--text-color-dark-gray);
+    color: var(--medium-gray);
     text-align: center;
 }
 
 .careers-list-item {
     padding: 15px 10px;
-    border-bottom: 3px solid var(--map-area-background);
+    border-bottom: 3px solid var(--dark-gray);
 }
 
 .careers-list-item-top,
@@ -53,7 +53,7 @@
 
 .careers-list-item-top p:last-child {
     font-size: 0.9rem;
-    color: var(--text-color-dark-gray);
+    color: var(--medium-gray);
 }
 
 .careers-list-item-bottom pre {

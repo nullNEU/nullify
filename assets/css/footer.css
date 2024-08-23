@@ -1,6 +1,6 @@
 footer {
     padding: 2rem;
-    background-color: var(--background-color);
+    background-color: var(--base-black);
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -11,7 +11,7 @@ footer {
 }
 
 .footer-sub-heading {
-    color: var(--text-color-dark-gray);
+    color: var(--medium-gray);
 }
 
 .footer-navigation-links {

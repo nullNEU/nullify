@@ -38,7 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--map-area-background);
+    background-color: var(--dark-gray);
 }
 
 .team-member a:last-child:hover {
