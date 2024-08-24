@@ -6,6 +6,7 @@
 {{ $eventsCSS := resources.Get "css/events.css" }}
 {{ $careersCSS := resources.Get "css/careers.css" }}
 {{ $teamCSS := resources.Get "css/team.css" }}
+{{ $projectsCSS := resources.Get "css/projects.css" }}
 
 <head>
     <title>{{- .Title -}}</title>
@@ -23,6 +24,7 @@
     <link type="text/css" rel="stylesheet" href="{{ $eventsCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $careersCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $teamCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $projectsCSS.RelPermalink }}"/>
 
     <!-- Generic Header Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
