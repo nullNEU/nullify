@@ -10,7 +10,7 @@
             {{ .cardTitle }}
         </h3>
         <p class="list-card-content-description">{{ .cardDescription }}</p>
-        <a class="list-card-link" href="{{ .buttonLink }}" target="_blank">
+        <a class="list-card-link" href="{{ .buttonLink }}" target="{{ if eq .cardType "event" }}_blank{{ else }}_self{{ end }}">
             <button>{{ .buttonText }}</button>
         </a>
     </div>
