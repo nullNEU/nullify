@@ -17,7 +17,7 @@
             </div>
             <div class="page-content-separator"></div>
             <div class="page-list">
-                {{ range .CurrentSection.Pages }}
+                {{ range (.CurrentSection.Pages.ByParam "eventDate").Reverse }}
                 {{- partial "listcard.html"
                     ( dict
                         "cardType" "event"

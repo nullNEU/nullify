@@ -2,7 +2,6 @@
 title: "Privacy Policy"
 date: 2024-05-16T16:04:57-04:00
 draft: false
-type: "privacy-policy"
 ---
 
 # Privacy Policy

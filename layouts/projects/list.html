@@ -3,37 +3,27 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="projects-content">
-            <div class="projects-heading-text">
-                <p>We build security-centric products.</p>
+        <div class="projects-section">
+            <div class="projects-description">
+                <h2>We code.</h2>
+                <p>Building security-centric products at nullNEU</p>
+                <ul>
+                    <li>99.96% code coverage</li>
+                    <li>3 days mean time to patch</li>
+                    <li>Continuous security assessment</li>
+                </ul>
             </div>
-            <div class="projects-metrics-menu">
-                <div class="code-coverage">
-                    <p>99.96%</p>
-                    <p>Code Coverage</p>
-                </div>
-                <div class="security-assessment">
-                    <p>Continuous</p>
-                    <p>Security Assessments</p>
-                </div>
-                <div class="mean-time-to-patch">
-                    <p>3 Days</p>
-                    <p>Mean Time To Patch</p>
-                </div>
-            </div>
+            <div class="page-content-separator"></div>
             <div class="projects-list">
-                {{ range .CurrentSection.Pages }}
-                <div class="project-list-item">
-                   
-                    <div class="project-item-logo">
-                        <img width="100" height="100" src="{{ .Params.project_image }}" alt="blueprint"/>
-                    </div>
-                    <div class="project-meta">
-                        <a class="project-meta-title">{{ .Title }}</a>
-                        <p class="project-meta-description">{{ .Summary }}</p>
-                        <button><a href="{{ .Page.Params.link }}">Learn More</a></button>
-                    </div>
-                </div>
+                {{ range (.CurrentSection.Pages.ByParam "eventDate").Reverse }}
+                    {{- partial "listcard.html"
+                        ( dict
+                        "cardTitle" .Page.Title
+                        "cardDescription" .Page.Summary
+                        "buttonLink" .Params.Link
+                        "buttonText" "View on GitHub"
+                        )
+                    -}}
                 {{ end }}
             </div>
         </div>
