@@ -5,7 +5,7 @@
         {{- partial "header.html" . -}}
         <div class="projects-section">
             <div class="projects-description">
-                <h2>We code.</h2>
+                {{- partial "pageheader.html" ( dict "header" "We code." ) -}}
                 <p>Building security-centric products at nullNEU</p>
                 <ul>
                     <li>99.96% code coverage</li>
@@ -15,7 +15,7 @@
             </div>
             <div class="page-content-separator"></div>
             <div class="projects-list">
-                {{ range (.CurrentSection.Pages.ByParam "eventDate").Reverse }}
+                {{ range .CurrentSection.Pages }}
                     {{- partial "listcard.html"
                         ( dict
                         "cardTitle" .Page.Title
