@@ -42,14 +42,14 @@
 }
 
 #blog-detail ul li {
-    list-style-type: disc; /* Or any style you prefer */
-    margin-bottom: 8px; /* Adds space between list items */
-    padding-left: 20px; /* Adds some padding for better alignment */
+    list-style-type: disc;
+    margin-bottom: 8px;
+    padding-left: 20px;
 }
 
 #blog-detail ul {
-    padding-left: 20px; /* Adjusts padding to align with custom list-style */
-    margin-top: 20px; /* Adds space above the list */
+    padding-left: 20px;
+    margin-top: 20px
 }
 
 
