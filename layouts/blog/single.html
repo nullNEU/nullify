@@ -3,17 +3,20 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="blog-post-content">
-            <h2 class="blog-post-heading">{{ .Title }}</h2>
-            <ul class="blog-post-metadata">
-                <li>{{ .Date.Format "January 2, 2006" }}</li>
-                <li>{{ .ReadingTime }} minutes</li>
-            </ul>
-            <hr class="blog-post-heading-hr">
+        <div class="page-content">
+            <div class="blogs-section">
+                <div class="blogs-description">
+                    <h2>{{ .Title }}</h2>
+                    <ul>
+                        <li>{{ .Date.Format "January 2, 2006" }}</li>
+                        <li>{{ .ReadingTime }} minutes</li>
+                    </ul>
+                </div> 
+                <article class="article">
+                    {{ .Content }}
+                </article>
+            </div>
         </div>
-        <article class="article">
-            {{ .Content }}
-        </article>
         {{- partial "footer.html" . -}}
     </body>
 </html>
