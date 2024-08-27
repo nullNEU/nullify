@@ -6,7 +6,7 @@
             {{- partial "pageheader.html" ( dict "header" "We write." "subHeader" "Latest Insights and Guides" ) -}}
             <div class="page-content-separator"></div>
             <div class="page-list">
-                {{ range (.CurrentSection.Pages.ByParam .Date).Reverse }}
+                {{ range (.CurrentSection.Pages.ByDate).Reverse }}
                 {{- partial "listcard.html"
                     ( dict
                         "cardType" "blog"
