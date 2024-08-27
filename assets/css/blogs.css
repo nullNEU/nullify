@@ -25,6 +25,7 @@
 }
 
 .blogs-description ul li {
+    list-style-type: none;
     color: var(--null-red);
     display: inline-block;
     margin: 0;
@@ -39,6 +40,18 @@
     right: -0.45rem;
     margin-left: 0.5rem;
 }
+
+#blog-detail ul li {
+    list-style-type: disc; /* Or any style you prefer */
+    margin-bottom: 8px; /* Adds space between list items */
+    padding-left: 20px; /* Adds some padding for better alignment */
+}
+
+#blog-detail ul {
+    padding-left: 20px; /* Adjusts padding to align with custom list-style */
+    margin-top: 20px; /* Adds space above the list */
+}
+
 
 .blogs-list {
     margin: 0;
