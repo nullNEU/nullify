@@ -4,18 +4,16 @@
     <body>
         {{- partial "header.html" . -}}
         <div class="page-content">
-            <div class="blogs-section">
-                <div class="blogs-description">
-                    <h2>{{ .Title }}</h2>
-                    <ul>
-                        <li>{{ .Date.Format "January 2, 2006" }}</li>
-                        <li>{{ .ReadingTime }} minutes</li>
-                    </ul>
-                </div> 
-                <article id="blog-detail" class="article">
-                    {{ .Content }}
-                </article>
-            </div>
+            <div class="blogs-description">
+                {{- partial "pageheader.html" ( dict "header" .Title ) -}}
+                <ul>
+                    <li>{{ .Date.Format "January 2, 2006" }}</li>
+                    <li>{{ .ReadingTime }} {{ if eq .ReadingTime 1 }}minute{{ else }}minutes{{ end }}</li>
+                </ul>
+            </div> 
+            <article id="blog-detail">
+                {{ .Content }}
+            </article>
         </div>
         {{- partial "footer.html" . -}}
     </body>
