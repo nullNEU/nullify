@@ -1,46 +1,28 @@
-/* Footer Container CSS */
 footer {
+    padding: 2rem;
+    background-color: var(--base-black);
     display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    padding: 1rem;
+    justify-content: space-between;
+    align-items: start;
 }
 
-.footer-navigation-bar {
-    display: flex;
-    width: 100%;
+.footer-social-media a {
+    margin-right: 10px;
 }
 
-/* Social Media CSS */
-.footer-navigation-bar-social-media-menu {
-    flex: 1;
+.footer-sub-heading {
+    color: var(--medium-gray);
 }
 
-/* Footer Navigation CSS */
-.footer-navigation-menu {
-    display: flex;
+.footer-navigation-links {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px 20px;
 }
 
-.footer-navigation-menu > li {
-    list-style-type: none;
-    margin-right: 1rem;
-}
-
-.footer-navigation-menu-link {
-    text-decoration: none;
-    color: black;
-}
-
-.footer-navigation-bar-secondary-menu {
-    margin-left: auto;
-}
-
-.footer-navigation-bar-secondary-menu ul {
-    display: flex;
-}
-
-.footer-navigation-notice-menu a {
-    text-decoration: none;
-    color: black;
-    margin-right: 1rem;
+@media screen and (max-width: 700px) {
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

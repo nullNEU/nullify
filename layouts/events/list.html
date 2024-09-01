@@ -3,45 +3,35 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="events-content">
-            <div class="events-heading-text">
-                <p>Our speakers work at world-class firms.</p>
+        
+        <div class="page-content">
+            {{- partial "pageheader.html" ( dict "header" "We have the best speakers." "subHeader" "Security professionals from world-class firms" ) -}}
+            <p class="speakers-from">SPEAKERS FROM</p>
+            <div class="company-strip">
+                <img class="company-strip-logo" src="/company-logos/akamai.svg" />
+                <img class="company-strip-logo" src="/company-logos/citizens-bank.svg" />
+                <img class="company-strip-logo" src="/company-logos/discover.svg" />
+                <img class="company-strip-logo" src="/company-logos/ernst-and-young.svg" />
+                <img class="company-strip-logo" src="/company-logos/fidelity.svg" />
+                <img class="company-strip-logo" src="/company-logos/raytheon.svg" />
             </div>
-            <div class="company-menu">
-                <div class="company-logo">
-                    <img width="65" height="24" src="/company-logos/akamai.png">
-                </div>
-                <div class="company-logo">
-                    <img width="120" height="24" src="/company-logos/citizens-bank.png">
-                </div>
-                <div class="company-logo">
-                    <img width="110" height="24" src="/company-logos/discover.png">
-                </div>
-                <div class="company-logo">
-                    <img width="24" height="30" src="/company-logos/ernst-and-young.png">
-                </div>
-                <div class="company-logo">
-                    <img width="120" height="24" src="/company-logos/fidelity.png">
-                </div>
-                <div class="company-logo">
-                    <img width="120" height="24" src="/company-logos/raytheon.png">
-                </div>
-            </div>
-            <div class="events-list">
-                {{ range .CurrentSection.Pages }}
-                <div class="event-list-item">
-                    <div class="event-item-logo">
-                        <img width="75" height="75" src="https://img.icons8.com/ios/100/today.png" alt="today"/>
-                    </div>
-                    <div class="event-meta">
-                        <p class="event-meta-title">{{ .Title }}</p>
-                        <p class="event-meta-description">{{ .Summary }}</p>
-                        <button><a href="{{ .RelPermalink }}">Learn More</a></button>
-                    </div>
-                </div>
+            <div class="page-content-separator"></div>
+            <div class="page-list">
+                {{ range (.CurrentSection.Pages.ByParam "eventDate").Reverse }}
+                {{- partial "listcard.html"
+                    ( dict
+                        "cardType" "event"
+                        "cardTitle" .Page.Title
+                        "cardDescription" .Page.Summary 
+                        "eventDate" .Params.EventDate
+                        "buttonLink" .Params.EventLink
+                        "buttonText" "View on LinkedIn"
+                    )
+                -}}
                 {{ end }}
             </div>
         </div>
+
         {{- partial "footer.html" . -}}
     </body>
 </html>

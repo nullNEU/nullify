@@ -1,143 +1,124 @@
-/* Index Container CSS */
-.index-content {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
+* {
+    --base-white: #F9F9F9;
+    --base-gray: #DBDBDB;
+    --medium-gray: #A8A8A8;
+    --dark-gray: #313131;
+    --base-black: #1C1C1C;
+    --null-red: #F35656;
 }
 
-/* Keyword Carousel */
-.keyword-carousel {
-    margin: 5rem auto;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    background-color: var(--base-black);
+    color: var(--base-gray);
+    overflow-x: hidden;
 }
 
-.keyword-list-item {
-    font-size: 2rem;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li {
     list-style-type: none;
 }
 
-/* Activities Menu CSS */
-.activities-menu {
-    display: flex;
-    gap: 10rem;
-    margin-top: 5rem;
+button {
+    border: none;
 }
 
-/* Code Community CSS*/
-.activities-menu-code {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* CSS common to pages and/or components */
+
+/* CSS for page header including header and subheader */
+
+.page-content {
+    min-height: 100vh;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.activities-menu-code p {
-    text-align: center;
+.page-header {
+    color: var(--base-white);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 900;
 }
 
-.activities-menu-code a {
-    text-decoration: none;
-    color: inherit;
+.page-subheader {
+    color: var(--base-white);
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-weight: 400;
 }
 
-.activities-menu-code button {
-    display: inline-block;
-    text-align: center;
-    margin-top: 0.5rem;
-    padding: 4px 7px;
-    color: black;
-    background-color: white;
-    border-style: solid;
+.page-content-separator {
+    height: 2px;
+    width: 100%;
+    background-color: var(--medium-gray);
+    margin-top: 2rem;
+}
+
+/* CSS for lists on pages */
+
+.page-list {
+    margin-top: 3rem;
+}
+
+.list-card {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 1rem;
+    margin: 30px 0;
+}
+
+.list-card-image {  
+    width: 100%;
     border-radius: 10px;
+}
+
+.list-card-content-title {
+    font-weight: 700;
+    margin: 0;
+}
+
+.list-card-content-description {
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--base-gray);
+}
+
+.list-card-link button:hover {
     cursor: pointer;
-    transition-duration: 0.4s;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 0.75rem;
+    opacity: 0.8;
 }
 
-.activities-menu-code button:hover {
-    background-color: black;
-    color: white;
+.list-card-link button {
+    border-radius: 5px;
+    background-color: var(--dark-gray);
+    color: var(--base-gray);
+    padding: 7px 12px;
+    font-size: 1rem;
 }
 
-/* Competition Community CSS*/
-.activities-menu-competition {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@media screen and (max-width: 700px) {
+    .page-content {
+        width: 85%;
+    }
 
-.activities-menu-competition p {
-    text-align: center;
-}
+    .list-card {
+        grid-template-columns: auto;
+    }
 
-.activities-menu-competition a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.activities-menu-competition button {
-    display: inline-block;
-    text-align: center;
-    margin-top: 0.5rem;
-    padding: 4px 7px;
-    color: black;
-    background-color: white;
-    border-style: solid;
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 0.75rem;
-}
-
-.activities-menu-competition button:hover {
-    background-color: black;
-    color: white;
-}
-
-/* Activities Community CSS*/
-.activities-menu-community {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.activities-menu-community p {
-    text-align: center;
-}
-
-.activities-menu-community a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.activities-menu-community button {
-    display: inline-block;
-    text-align: center;
-    margin-top: 0.5rem;
-    padding: 4px 7px;
-    color: black;
-    background-color: white;
-    border-style: solid;
-    border-radius: 10px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 0.75rem;
-}
-
-.activities-menu-community button:hover {
-    background-color: black;
-    color: white;
-}
-
-@media only screen and (max-width: 800px) {
-    .activities-menu {
-        flex-direction: column;
-        margin: 0;
-        padding: 3rem 0;
-        gap: 3rem;
+    .list-card-image {
+        width: 70px;
+        height: 70px;
     }
 }

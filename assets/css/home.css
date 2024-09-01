@@ -1,120 +1,121 @@
-.home-content-wrapper {
-	width: 60%;
-	margin: 0 auto;
-
-	@media only screen and (max-width: 640px) {
-		padding-top: 5rem;
-		width: 90%;
-	}
-
-	@media only screen and (max-width: 1007px) {
-		width: 90%;
-	}
-
-	.home-content-item {
-		margin: 4rem 0;
-	}
-
-	.card-wrapper {
-		@media only screen and (max-width: 640px) {
-			flex-direction: column;
-			gap: 4rem;
-		}
-	}
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Header text aniamtion styling begins */
-.matters-text {
-	margin: 0;
-	font-size: 2rem;
-	font-weight: bolder;
-
-	@media only screen and (max-width: 640px) {
-		font-size: 2rem;
-		text-align: center;
-	}
+.home h1 {
+    font-family: "Inconsolata";
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
 }
 
-.matters-wrapper {
-	height: 50px;
-	overflow: hidden;
-
-	.matters-text {
-		font-size: 2rem;
-	}
-
-	.content-container-list {
-		margin-top: 0;
-		text-align: center;
-
-		.content-container-list-item {
-			line-height: 50px;
-			white-space: nowrap;
-			margin: 0;
-			-webkit-animation-name: change;
-			-webkit-animation-duration: 10s;
-			-webkit-animation-iteration-count: infinite;
-			animation-name: change;
-			animation-duration: 10s;
-			animation-iteration-count: infinite;
-		}
-	}
+.home h2 {
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    font-family: "Inconsolata";
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 2rem;
 }
 
-@keyframes change {
-	0%, 20%, 100% {
-		transform: translate3d(0, 0, 0);
-    }
-	30%, 40% {
-		transform: translate3d(0, -100%, 0);
-    }
-	50%, 60% {
-		transform: translate3d(0, -200%, 0);
-	}
-	70%, 80% {
-		transform: translate3d(0, -300%, 0);
-	}
-	89%, 99% {
-		transform: translate3d(0, -400%, 0);
-	}
+.home .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-/* Header text animation styling ends */
 
 .home-card {
-	width: 100%;
-	margin: 0 auto;
+    background-color: var(--dark-gray);
+    padding: 20px;
+    border-radius: 16px;
+}
 
-	.icon-header {
-		text-align: center;
-		font-size: 2rem;
-		margin: 1rem 0;
-	}
+.home-card:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
 
-	.home-card-summary {
-		text-align: center;
-		color: gray;
-		margin: 1rem 0;
-	}
+.home-card .home-card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
 
-	.home-card-link {
-		width: fit-content;
-		background-color: black;
-		border-radius: 10px;
-		margin: 0 auto;
-		margin-top: 10px;
-		padding: 8px 12px;
-		color: white;
-		gap: 3px;
-		transition: all ease-in-out 100ms;
+.home-card .home-card-text p {
+    width: 60%;
+    margin: 0;
+}
 
-		&:hover {
-			gap: 0.7rem;
-			text-decoration: none;
-		}
-	}
+.map-area {
+    min-height: 100vh;
+    background-color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-	@media only screen and (max-width: 1007px) {
-		width: 80%;
-	}
+.map-area p {
+    width: 25%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.map-image {
+    height: 500px;
+    width: 50%;
+    background: url("/images/worldmap.svg") no-repeat center center;
+    background-attachment: scroll;
+    background-size: contain;
+}
+
+.map-area a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    color: var(--dark-gray);
+    background-color: var(--base-gray);
+}
+
+.map-area a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 700px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+
+    .home h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-card {
+        width: 80%;
+    }
+
+    .map-image {
+        width: 100%;
+        height: 500px;
+        background-size: 300%;
+        background-position: 27%;
+    }
+
+    .map-area p {
+        width: 90%;
+        font-size: inherit;
+    }
 }

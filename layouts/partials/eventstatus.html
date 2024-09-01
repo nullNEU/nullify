@@ -1,0 +1,7 @@
+{{ $t1 := .eventDate | dateFormat "20060102" }}
+{{ $t2 := now.Format "20060102" }}
+{{ if lt $t1 $t2 }}
+    <pre class="event-status-tag">#completed</pre>
+{{ else }}
+    <pre class="event-status-tag">#upcoming</pre>
+{{ end }}

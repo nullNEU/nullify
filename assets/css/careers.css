@@ -1,101 +1,77 @@
-/* Careers Container CSS */
-.careers-content {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-}
-
-/* Heading CSS */
-.careers-heading-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.careers-heading-text p {
-    text-align: center;
-}
-
-.careers-roles-heading {
-    margin: 0 auto;
-    margin-top: 5rem;
-}
-
-/* Roles Container CSS */
-.roles {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem auto;
-    width: 90%;
-}
-
-.role-block {
-    margin: 1rem auto;
-}
-
-.role-heading-text {
-    text-align: start;
-}
-
-@media screen and (max-width: 800px) {
-    .roles {
-        width: 90%;
-    }
-}
-
-/* Roles-meta Container CSS */
-.role-meta-text {
-    display: flex;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-}
-
-.role-meta-location {
-    display: flex;
-    gap: 0.25rem;
-    font-size: 0.75rem;
-}
-
-.role-meta-location p {
-    width: 5rem;
-}
-
-.role-meta-team-description {
-    display: flex;
-    gap: 0.25rem;
-    font-size: 0.75rem;
-}
-
-.role-meta-team-description p {
-    width: 11rem;
-}
-
-.role-meta-apply {
-    margin-right: 0;
-    margin-left: 3%;
-    margin-top: -1rem;
-}
-
-.role-meta-apply button {
-    background-color: white;
-    border: 1px solid black;
-    padding: 4px 7px;
-    border-radius: 10px;
-    text-decoration: none;
+.careers-join-the-chat {
     display: inline-block;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    font-weight: 200;
-    font-style: normal;
+    gap: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    color: var(--base-gray);
+    border: 1px solid var(--base-gray);
 }
 
-.role-meta-apply button:hover {
-    background-color: black;
-    color: white;
+.careers-join-the-chat:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
 }
 
-.role-meta-apply button p {
+.careers-join-the-chat img {
+    filter: invert(100);
+}
+
+.careers-empty-list {
+    padding: 15px;
+    background-color: var(--dark-gray);
+    border-radius: 15px;
+    color: var(--medium-gray);
     text-align: center;
-    margin: 0 auto;
-    padding-bottom: 0.125rem;
+}
+
+.careers-list-item {
+    padding: 15px 10px;
+    border-bottom: 3px solid var(--dark-gray);
+}
+
+.careers-list-item-top,
+.careers-list-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7px 0;
+}
+
+.careers-list-item-top p,
+.careers-list-item-bottom pre {
+    margin: 0;
+}
+
+.careers-list-item-top p:first-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--null-red);
+}
+
+.careers-list-item-top p:last-child {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+}
+
+.careers-list-item-bottom pre {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 700px) {
+    .careers-list-item-bottom {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .careers-list-item-top {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .careers-list-item-top, .careers-list-item-bottom {
+        gap: 10px;
+    }
 }

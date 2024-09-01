@@ -1,72 +1,50 @@
-/* Team Container CSS */
-.team-content {
+.team-member-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    margin-top: 50px;
+}
+
+.team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 1rem;
-}
-
-/* Team Heading CSS */
-#page-title {
     text-align: center;
-    font-weight: 300;
 }
 
-/* Team Primary Row CSS */
-.team-primary-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+.team-member p {
+    font-family: "Inconsolata", sans-serif;
+    color: var(--null-red);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin: 10px auto;
 }
 
-.image-frame {
-    display: flex;
-    flex-direction: column;
-}
-
-.image-frame a {
-    margin: 0px;
+.team-member a {
+    display: block;
     text-decoration: underline;
-    text-decoration-color: black;
-    color: black;
-    text-align: center;
+    margin-top: 15px;
 }
 
-.image-frame p {
-    margin: 0px;
-    color: black;
-    text-align: center;
+.team-member a:hover {
+    text-decoration: none;
 }
 
-#team-mastodon {
-    height: 22px;
-    width: 22px;
-}
-
-/* Team Secondary Row CSS */
-.team-secondary-row {
+.team-member a:last-child {
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 50%;
     display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--dark-gray);
 }
 
-.team-primary-row img {
-    height: 200px;
-    width: 200px;
-    margin-top: 0.5rem;
+.team-member a:last-child:hover {
+    background-color: transparent;
 }
 
-.team-secondary-row img {
-    height: 200px;
-    width: 200px;
-}
-
-.frame {
-    clip-path: circle(40%);
+.team-member-image {
+    border-radius: 50%;
 }

@@ -1,16 +1,13 @@
 <!-- CSS Objects -->
-{{ $resetCSS := resources.Get "css/reset.css" }}
+{{ $indexCSS := resources.Get "css/index.css" }}
+{{ $homeCSS := resources.Get "css/home.css" }}
 {{ $headerCSS := resources.Get "css/header.css" }}
 {{ $footerCSS := resources.Get "css/footer.css" }}
-{{ $teamCSS := resources.Get "css/team.css" }}
-{{ $aboutCSS := resources.Get "css/about.css" }}
-{{ $projectsCSS := resources.Get "css/projects.css" }}
-{{ $careersCSS := resources.Get "css/careers.css" }}
-{{ $blogCSS := resources.Get "css/blog.css" }}
 {{ $eventsCSS := resources.Get "css/events.css" }}
-{{ $indexCSS := resources.Get "css/index.css" }}
-{{ $competeCSS := resources.Get "css/compete.css" }}
-{{ $privacyPolicyCSS := resources.Get "css/privacy-policy.css" }}
+{{ $careersCSS := resources.Get "css/careers.css" }}
+{{ $teamCSS := resources.Get "css/team.css" }}
+{{ $projectsCSS := resources.Get "css/projects.css" }}
+{{ $blogsCSS := resources.Get "css/blogs.css" }}
 
 <head>
     <title>{{- .Title -}}</title>
@@ -18,21 +15,18 @@
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- CSS Stylesheet Inclusions -->
+    <link type="text/css" rel="stylesheet" href="{{ $indexCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $homeCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $headerCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $footerCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $resetCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $teamCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $aboutCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $projectsCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $careersCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $blogCSS.RelPermalink }}"/>
     <link type="text/css" rel="stylesheet" href="{{ $eventsCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $indexCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $competeCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $privacyPolicyCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $careersCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $teamCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $projectsCSS.RelPermalink }}"/>
+    <link type="text/css" rel="stylesheet" href="{{ $blogsCSS.RelPermalink }}"/>
 
     <!-- Generic Header Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
