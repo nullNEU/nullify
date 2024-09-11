@@ -8,20 +8,20 @@
             <div class="team-member-list">
                 {{ range first 3 .Params.Team }}
                     <div class="team-member">
-                        <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" />
+                        <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
                         <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
                         <p>{{.position}}</p>
-                        <a href="{{ .mastodon }}" target="_blank"><img height="30" width="30" src="/icons/mastodon.svg" /></a>
+                        <a href="{{ .mastodon }}" target="_blank"><img height="30" width="30" src="/icons/mastodon.svg" alt="Mastodon logo" /></a>
                     </div>
                 {{ end }}
             </div>
             <div class="team-member-list">
                 {{ range last 4 .Params.Team }}
                     <div class="team-member">
-                        <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" />
+                        <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
                         <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
                         <p>{{.position}}</p>
-                        <a href="{{ .mastodon }}" target="_blank"><img height="25" width="25" src="/icons/mastodon.svg" /></a>
+                        <a href="{{ .mastodon }}" target="_blank"><img height="25" width="25" src="/icons/mastodon.svg" alt="Mastodon logo" /></a>
                     </div>
                 {{ end }}
             </div>
