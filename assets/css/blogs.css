@@ -48,6 +48,10 @@
     text-decoration: underline;
 }
 
+#blog-detail p {
+    line-height: 1.5rem;
+}
+
 @media screen and (max-width: 700px) {
     .blogs-description ul li:not(:last-child)::after {
         content: none;
