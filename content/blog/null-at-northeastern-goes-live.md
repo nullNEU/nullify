@@ -2,6 +2,7 @@
 title: "null at Northeastern Goes Live!"
 date: 2024-09-12T12:36:12-04:00
 draft: false
+summary: Learn what goes into making the null website fast, secure, and amazing!  
 readingTime: 3
 ---
 
