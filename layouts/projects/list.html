@@ -3,7 +3,7 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <div class="projects-section">
+        <div class="page-content">
             <div class="projects-description">
                 {{- partial "pageheader.html" ( dict "header" "We code." ) -}}
                 <p>Building security-centric products at nullNEU</p>
@@ -14,7 +14,7 @@
                 </ul>
             </div>
             <div class="page-content-separator"></div>
-            <div class="projects-list">
+            <div class="page-list">
                 {{ range .CurrentSection.Pages }}
                     {{- partial "listcard.html"
                         ( dict

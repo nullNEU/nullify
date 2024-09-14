@@ -26,7 +26,7 @@
 }
 
 .blogs-description ul li:not(:last-child)::after {
-    color: white;
+    color: var(--base-white);
     content: "|";
     position: relative;
     right: -0.45rem;
@@ -42,6 +42,14 @@
 #blog-detail ul {
     padding-left: 20px;
     margin-top: 20px
+}
+
+#blog-detail a {
+    text-decoration: underline;
+}
+
+#blog-detail p {
+    line-height: 1.5rem;
 }
 
 @media screen and (max-width: 700px) {
