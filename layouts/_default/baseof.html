@@ -4,7 +4,9 @@
     <body>
         {{- partial "header.html" . -}}
         <div>
-            <p>Main.</p>
+            {{ block "main" . }}
+            <!-- all page specific html goes here -->
+            {{ end }}
         </div>
         {{- partial "footer.html" . -}}
     </body>
