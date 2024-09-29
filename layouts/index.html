@@ -5,7 +5,14 @@
         {{- partial "header.html" . -}}
 
         <div class="home">
-            <h1>security</h1>
+            <div class="matters-wrapper home-content-item">
+                <ul class="content-container-list">
+                    <li class="matters-text content-container-list-item">Security</li>
+                    <li class="matters-text content-container-list-item">Privacy</li>
+                    <li class="matters-text content-container-list-item">Cyber awareness</li>
+                    <li class="matters-text content-container-list-item">FOSS</li>
+                </ul>
+            </div>
             <h2>matters to us</h2>
             <div class="cards">
                 {{- partial "homecard.html" ( dict "iconSrc" "/icons/dev.svg" "text" "Secure software development" "link" "/projects" ) -}}
