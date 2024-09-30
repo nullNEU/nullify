@@ -18,7 +18,7 @@
 /* animated text styling begins */
 
 .matters-wrapper {
-	height: 85px;
+	height: 75px;
 	overflow: hidden;
 }
 
@@ -29,8 +29,8 @@
 }
 
 .content-container-list-item {
-    line-height: 85px;
-    /* white-space: nowrap; */
+    line-height: 75px;
+    white-space: nowrap;
     margin: 0;
     -webkit-animation-name: change;
     -webkit-animation-duration: 10s;
@@ -44,14 +44,11 @@
 	0%, 20%, 100% {
 		transform: translate3d(0, 0, 0);
    }
-	30%, 40% {
+	40%, 60% {
 		transform: translate3d(0, -100%, 0);
    }
-	50%, 60% {
+	70%, 90% {
 		transform: translate3d(0, -200%, 0);
-	}
-	70%, 80% {
-		transform: translate3d(0, -300%, 0);
 	}
 }
 
