@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="page-content">
+    <div class="tools-banner">
+        <div>
+            <h3>Privacy respecting</h3>
+            <h1>Tools and Services</h1>
+            <p>
+                This is an initiative by null to keep fellow Northeasern students digitally secure.
+                Follow this page for recommendations, alternatives, and resources to keep your presence
+                on the web private.
+            </p>
+            <h2>#keepHuskieSafeOnline</h2>
+        </div>
+        <img src="/images/husky.svg" height="150px" width="150px" />
+    </div>
+    <div class="tools-list">
+        {{ range .CurrentSection.Pages }}
+        <h2>{{ .Title }}</h2>
+        <p class="tools-list-subtitle">{{ .Params.SubTitle }}</p>
+        <div class="tool-card-list">
+            {{ partial "toolcard.html" . }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
