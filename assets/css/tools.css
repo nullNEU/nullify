@@ -1,0 +1,93 @@
+.tools-banner {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: var(--dark-gray);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.tools-banner h1, h2, h3 {
+    margin: 0;
+}
+
+.tools-banner p, h2 {
+    margin-top: 15px;
+}
+
+.tools-banner h1 {
+    color: var(--null-red);
+}
+
+.tools-banner h3 {
+    font-weight: 300;
+}
+
+.tools-banner h2 {
+    font-family: "Inconsolata", sans-serif;
+    letter-spacing: 2px;
+    color: var(--base-white);
+}
+
+.tools-banner img {
+    margin: auto;
+}
+
+.tools-list {
+    margin-top: 3rem;
+}
+
+.tools-list h2:not(:first-child) {
+    margin-top: 30px;
+}
+
+.tools-list-subtitle {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.tool-card-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.tool-card h3 {
+    margin: 0;
+}
+
+.tool-card {
+    border-radius: 15px;
+    border: 1px var(--medium-gray) solid;
+    padding: 20px;
+}
+
+.tool-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.tool-card-header-logo {
+    filter: grayscale(1);
+}
+
+.tool-card:hover .tool-card-header-logo {
+    filter: none;
+}
+
+.tool-card-header a {
+    color: var(--null-red);
+    text-decoration: underline;
+}
+
+.tool-card p {
+    margin-top: 15px;
+    padding-left: 47px;
+}
+
+@media screen and (max-width: 700px) {
+    .tool-card-list {
+        grid-template-columns: auto;
+    }
+}
