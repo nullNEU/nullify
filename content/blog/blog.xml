@@ -6,11 +6,20 @@
     <description>Recent content in Blog on Null NEU</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+
+  <image>
+    <url>https://nullneu.pages.dev/images/logo.png</url>
+    <title>Blog on Null NEU</title>
+    <link>https://nullneu.pages.dev/</link>
+  </image>
+
     <lastBuildDate>Thu, 12 Sep 2024 12:36:12 -0400</lastBuildDate>
     <atom:link href="https://nullneu.pages.dev//blog/index.xml" rel="self" type="application/rss+xml" />
+
     <item>
       <title>null at Northeastern Goes Live!</title>
       <link>https://nullneu.pages.dev/blog/null-at-northeastern-goes-live/</link>
+      <readingTime>{{ .ReadingTime }} minutes read</readingTime>
       <pubDate>Thu, 12 Sep 2024 12:36:12 -0400</pubDate>
       <guid>//localhost:1313/blog/null-at-northeastern-goes-live/</guid>
       <description>Learn what goes into making the null website fast, secure, and amazing!</description>
