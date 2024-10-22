@@ -70,6 +70,7 @@
 
 .tool-card-header-logo {
     filter: grayscale(1);
+    border-radius: 10px;
 }
 
 .tool-card:hover .tool-card-header-logo {
