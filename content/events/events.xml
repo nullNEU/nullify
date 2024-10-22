@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events at Null NEU</title>
+    <link>https://nullneu.pages.dev/events/</link>
+    <description>Recent content in Events on Null NEU</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Oct 2024 21:52:00 -0400</lastBuildDate>
+    <atom:link href="https://nullneu.pages.dev/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyber Career Ascent</title>
+      <link>https://nullneu.pages.dev/events/cyber-career-ascent/</link>
+      <pubDate>Mon, 14 Oct 2024 21:52:00 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/cyber-career-ascent/</guid>
+      <description>In today's rapidly evolving digital landscape, a career in Information Security offers exciting opportunities and challenges. Join null NEU for an insightful presentation by Jeremiah Salamon, a seasoned cybersecurity expert, as he guides you through the critical aspects of career development in this dynamic field.</description>
+    </item>
+    <item>
+      <title>Guardians of Privacy by Naomi Brockwell</title>
+      <link>https://nullneu.pages.dev/events/privacy-initiative/</link>
+      <pubDate>Sun, 29 Sep 2024 14:14:30 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/privacy-initiative/</guid>
+      <description>Naomi Brockwell, tech journalist and privacy advocate, will present on the importance of privacy and lead a discussion on how we can effectively push privacy forward and get more people to care. We’ll brainstorm impactful ideas and share resources to support each other’s efforts.</description>
+    </item>
+    <item>
+      <title>Fortifying your Digital Assets</title>
+      <link>https://nullneu.pages.dev/events/blockchain-colab/</link>
+      <pubDate>Tue, 24 Sep 2024 15:45:00 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/blockchain-colab/</guid>
+      <description>null NEU, in collaboration with NEU Blockchain, presents an engaging event that delves into key strategies and best practices for fortifying and safeguarding your digital assets. Join us to explore expert insights and actionable steps to protect your digital wealth in today&amp;rsquo;s evolving cybersecurity landscape.</description>
+    </item>
+    <item>
+      <title>Frontline Tales: Lessons from the Cyber Battlefield</title>
+      <link>https://nullneu.pages.dev/events/frontline-tales/</link>
+      <pubDate>Sat, 14 Sep 2024 17:00:00 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/frontline-tales/</guid>
+      <description>Join null NEU for an eye-opening exploration of cybersecurity incident response in today&amp;rsquo;s fast-paced digital world! While preventing all cyber incidents may be impossible, knowing how to react is crucial.</description>
+    </item>
+    <item>
+      <title>Fall Fest: 2024</title>
+      <link>https://nullneu.pages.dev/events/fall-fest/</link>
+      <pubDate>Mon, 02 Sep 2024 20:05:00 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/fall-fest/</guid>
+      <description>College is back in full swing, and Fall Fest is here! Come hang out at null NEU’s table this Tuesday to meet fellow tech enthusiasts, dive into our exciting projects, and snag some awesome stickers. We’ve got a lineup of fun activities and tons of info on how you can get involved. You won’t want to miss it—see you there!</description>
+    </item>
+    <item>
+      <title>Meet &amp; Greet</title>
+      <link>https://nullneu.pages.dev/events/meet-and-greet/</link>
+      <pubDate>Sun, 18 Aug 2024 16:10:14 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/meet-and-greet/</guid>
+      <description>General meetup with the null NEU team to learn about club&amp;rsquo;s mission and network with the cybersecurity community at Northeastern community.</description>
+    </item>
+    <item>
+      <title>Offensive Security 101</title>
+      <link>https://nullneu.pages.dev/events/offensive-security/</link>
+      <pubDate>Sun, 18 Aug 2024 16:06:05 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/offensive-security/</guid>
+      <description>Kartik Sharma, OSCP shares his expertise in offensive security, red teaming and penetration testing.</description>
+    </item>
+    <item>
+      <title>Preparedness and Scam Prevention Day 2023</title>
+      <link>https://nullneu.pages.dev/events/preparedness-day/</link>
+      <pubDate>Sun, 18 Aug 2024 16:02:24 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/preparedness-day/</guid>
+      <description>null NEU participates in the Preparedness Day and Scam Prevention event at Northeastern University to share knowledge surrounding cybersecurity.</description>
+    </item>
+    <item>
+      <title>Cybersecurity Career Building</title>
+      <link>https://nullneu.pages.dev/events/career-building/</link>
+      <pubDate>Sun, 18 Aug 2024 15:59:25 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/career-building/</guid>
+      <description>Interactive session with Chinmay Kulkarni, a Technology Risk Consultant at EY to gain an overview of the cybersecurity industry and skills needed to excel in the field.</description>
+    </item>
+    <item>
+      <title>Meet and Greet 2.0</title>
+      <link>https://nullneu.pages.dev/events/meet-and-greet-two/</link>
+      <pubDate>Sun, 18 Aug 2024 15:54:48 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/meet-and-greet-two/</guid>
+      <description>General meetup with the null NEU team to learn about club&amp;rsquo;s mission and network with the cybersecurity community at Northeastern community.</description>
+    </item>
+    <item>
+      <title>Cloud Native Security and Secure Software Development - AMA</title>
+      <link>https://nullneu.pages.dev/events/cloud-native-security/</link>
+      <pubDate>Sun, 18 Aug 2024 15:49:33 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/cloud-native-security/</guid>
+      <description>Mihir Shah, author of &amp;lsquo;Securing Cloud-Native App Development&amp;rsquo; covers cloud security best practices, secure software development methodologies, DevSecOps, and container security.</description>
+    </item>
+    <item>
+      <title>Incident Response 101</title>
+      <link>https://nullneu.pages.dev/events/incident-response/</link>
+      <pubDate>Sun, 18 Aug 2024 15:43:12 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/incident-response/</guid>
+      <description>Prateek Vutkur, a cybersecurity graduate student conducts a workshop to provide fundamental understanding of incident response and practical skills essential to cybersecurity.</description>
+    </item>
+    <item>
+      <title>null NEU - Hangouts</title>
+      <link>https://nullneu.pages.dev/events/hangouts/</link>
+      <pubDate>Sun, 18 Aug 2024 15:27:45 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/hangouts/</guid>
+      <description>A networking event for new students to connect with seniors and gain insights into their journey at Northeastern.</description>
+    </item>
+    <item>
+      <title>Vegas Hackers Camp</title>
+      <link>https://nullneu.pages.dev/events/vegas-hacker-camp/</link>
+      <pubDate>Sun, 18 Aug 2024 15:23:09 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/vegas-hacker-camp/</guid>
+      <description>Hritesh Sonawane, a cybersecurity graduate student at Northeastern and CrowdStrike 2023-24 NextGen Scholar, brings insights from BlackHat USA and DefCon conferences.</description>
+    </item>
+    <item>
+      <title>Software Supply Chain Security 101</title>
+      <link>https://nullneu.pages.dev/events/supply-chain/</link>
+      <pubDate>Sun, 18 Aug 2024 15:09:34 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/supply-chain/</guid>
+      <description>Kaushik Vaida, a graduate student at Northeastern shares his experience in supply chain security, offensive security, and IAM, along with his contribution to Cybrary.</description>
+    </item>
+    <item>
+      <title>Opensource Threat Research 101</title>
+      <link>https://nullneu.pages.dev/events/opensource-research/</link>
+      <pubDate>Sun, 18 Aug 2024 15:04:49 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/opensource-research/</guid>
+      <description>Sooraj Sathyanarayanan, null NEU President, dives deep into the complexities of dark web and threat research tactics, and shares hands-on knowledge.</description>
+    </item>
+    <item>
+      <title>Cyber Threat Intelligence 101: Understanding the Basics</title>
+      <link>https://nullneu.pages.dev/events/lea-cure-threat-intelligence/</link>
+      <pubDate>Sun, 18 Aug 2024 14:35:14 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/lea-cure-threat-intelligence/</guid>
+      <description>Lea Cure, Cyber Threat Intelligence Manager at Citizens Bank, talks about the importance of threat intelligence for modern enterprises.</description>
+    </item>
+    <item>
+      <title>Security Awareness Workshop</title>
+      <link>https://nullneu.pages.dev/events/security-awareness-workshop/</link>
+      <pubDate>Sat, 17 Aug 2024 20:28:20 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/security-awareness-workshop/</guid>
+      <description>null NEU collaborates with GDSC Northeastern University to present an immersive cybersecurity workshop.</description>
+    </item>
+    <item>
+      <title>CyberCine Fest: NEU&#39;s Premier InfoSec Movie Night</title>
+      <link>https://nullneu.pages.dev/events/cybercine-fest/</link>
+      <pubDate>Sat, 17 Aug 2024 20:21:34 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/cybercine-fest/</guid>
+      <description>Join us to watch &amp;lsquo;The Great Hack&amp;rsquo; documentary and a post-film conversation on the field of cybersecurity.</description>
+    </item>
+    <item>
+      <title>Introduction to Open Source: Contribute, Collaborate, and Grow</title>
+      <link>https://nullneu.pages.dev/events/open-source/</link>
+      <pubDate>Sat, 17 Aug 2024 20:15:46 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/open-source/</guid>
+      <description>Parthiv Menon shares his experience as an open source contributor to Wikimedia projects and 101 of open source projects.</description>
+    </item>
+    <item>
+      <title>Preparedness and Scam Prevention Day 2024</title>
+      <link>https://nullneu.pages.dev/events/preparedness-and-scam-prevention-day/</link>
+      <pubDate>Sat, 17 Aug 2024 20:10:27 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/preparedness-and-scam-prevention-day/</guid>
+      <description>null NEU participates in the Preparedness Day and Scam Prevention event at Northeastern University to share knowledge surrounding cybersecurity.</description>
+    </item>
+    <item>
+      <title>Cyber Pathways: Navigating Full-Time Careers</title>
+      <link>https://nullneu.pages.dev/events/cyber-pathways/</link>
+      <pubDate>Fri, 16 Aug 2024 20:04:00 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/cyber-pathways/</guid>
+      <description>Northeastern cybersecurity alumni join a panel discussion to share their paths to securing full-time positions.</description>
+    </item>
+    <item>
+      <title>null NEU X Boston Security Meetup: A Revolution in Security and Networking</title>
+      <link>https://nullneu.pages.dev/events/boston-security-meetup/</link>
+      <pubDate>Fri, 16 Aug 2024 16:00:00 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/boston-security-meetup/</guid>
+      <description>The Boston Security Meetup June 2024 explores the basics of Purple Teaming in cybersecurity with Mike Siegel and delves into the creation and implications of personal LTE with Chuck McAuley and an incredible networking opportunity.</description>
+    </item>
+    <item>
+      <title>Can a Hacker Murder your City?</title>
+      <link>https://nullneu.pages.dev/events/patrick-laverty-osint/</link>
+      <pubDate>Thu, 16 May 2024 14:00:26 -0400</pubDate>
+      <guid>https://nullneu.pages.dev/events/patrick-laverty-osint/</guid>
+      <description>Patrick Laverty, of Compass Solutions talks about his adventures penetrating government facilities - and why it should have been harder.</description>
+    </item>
+  </channel>
+</rss>
