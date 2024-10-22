@@ -3,7 +3,7 @@ title: "Brave"
 description: "Fast, secure browser with built-in ad block and privacy controls"
 date: 2024-10-21T13:13:01-04:00
 draft: false
-image: "/static/images/Brave-logo.svg"
+image: "/images/tools/brave.png"
 ---
 
 Brave is a free and open-source web browser that prioritizes user privacy and security. Key features include:

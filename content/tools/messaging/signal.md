@@ -3,7 +3,7 @@ title: "Signal"
 description: "Encrypted messaging app with strong privacy focus"
 date: 2024-10-21T13:13:01-04:00
 draft: false
-image: "/static/images/signal-logo.svg"
+image: "/images/tools/signal-logo.svg"
 ---
 
 Signal is a cross-platform encrypted messaging service that emphasizes privacy and security. Key features include:
