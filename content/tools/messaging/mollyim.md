@@ -3,7 +3,7 @@ title: "Molly"
 description: "A security-hardened Signal fork for Android"
 date: 2024-10-21T13:13:01-04:00
 draft: false
-image: "/static/images/tools/mollyim.png"
+image: "/images/tools/mollyim.png"
 linkToTool: https://molly.im/
 ---
 
