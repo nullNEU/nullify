@@ -3,7 +3,7 @@ title: "Proton Mail"
 description: "Secure Swiss-based email with end-to-end encryption"
 date: 2024-10-21T13:13:01-04:00
 draft: false
-image: "/images/tools/protonmail-logo.svg"
+image: "/images/tools/protonmail-logo.png"
 linkToTool: "https://proton.me/mail"
 tryItNow: "https://account.proton.me/signup"
 ---
