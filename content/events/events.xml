@@ -7,12 +7,12 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 14 Oct 2024 21:52:00 -0400</lastBuildDate>
-    <atom:link href="https://nullneu.pages.dev/events/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nullneu.pages.dev/events/events.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cyber Career Ascent</title>
-      <link>https://nullneu.pages.dev/events/cyber-career-ascent/</link>
+      <link>{{ .Params.eventLink | default .Permalink }}</link>
       <pubDate>Mon, 14 Oct 2024 21:52:00 -0400</pubDate>
-      <guid>https://nullneu.pages.dev/events/cyber-career-ascent/</guid>
+      <guid>{{ .Permalink }}</guid>
       <description>In today's rapidly evolving digital landscape, a career in Information Security offers exciting opportunities and challenges. Join null NEU for an insightful presentation by Jeremiah Salamon, a seasoned cybersecurity expert, as he guides you through the critical aspects of career development in this dynamic field.</description>
     </item>
     <item>
@@ -110,7 +110,7 @@
       <title>Software Supply Chain Security 101</title>
       <link>https://nullneu.pages.dev/events/supply-chain/</link>
       <pubDate>Sun, 18 Aug 2024 15:09:34 -0400</pubDate>
-      <guid>https://nullneu.pages.dev/events</guid>
+      <guid>https://nullneu.pages.dev/events/supply-chain/</guid>
       <description>Kaushik Vaida, a graduate student at Northeastern shares his experience in supply chain security, offensive security, and IAM, along with his contribution to Cybrary.</description>
     </item>
     <item>
