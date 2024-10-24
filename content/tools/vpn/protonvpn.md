@@ -5,7 +5,6 @@ date: 2024-10-21T13:13:01-04:00
 draft: false
 image: "/images/tools/protonvpn-logo.png"
 linkToTool: "https://proton.me/vpn"
-tryItNow: "https://account.proton.me/signup?product=vpn"
 ---
 
 Proton VPN is a secure VPN service from the makers of Proton Mail. Key features include:

@@ -5,7 +5,6 @@ date: 2024-10-23T13:13:01-04:00
 draft: false
 image: "/images/tools/simplelogin-logo.jpg"
 linkToTool: "https://simplelogin.io"
-tryItNow: "https://app.simplelogin.io/auth/register"
 ---
 SimpleLogin provides unlimited email aliases with powerful features. Key features include:
 - Unlimited aliases

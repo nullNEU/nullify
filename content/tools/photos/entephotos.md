@@ -5,7 +5,6 @@ date: 2024-10-21T13:13:01-04:00
 draft: false
 image: "/images/tools/entephotos-logo.jpg"
 linkToTool: "https://ente.io"
-tryItNow: "https://ente.io/download"
 ---
 
 Ente Photos is an encrypted photo storage and backup solution. Key features include:

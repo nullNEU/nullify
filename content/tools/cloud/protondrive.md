@@ -5,7 +5,6 @@ date: 2024-10-21T13:13:01-04:00
 draft: false
 image: "/images/tools/protondrive-logo.png"
 linkToTool: "https://proton.me/drive"
-tryItNow: "https://account.proton.me/signup?product=drive"
 ---
 
 Proton Drive is an end-to-end encrypted cloud storage service. Key features include:

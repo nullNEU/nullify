@@ -5,7 +5,6 @@ date: 2024-10-21T13:13:01-04:00
 draft: false
 image: "/images/tools/protoncalendar-logo.png"
 linkToTool: "https://proton.me/calendar"
-tryItNow: "https://account.proton.me/signup"
 ---
 
 Proton Calendar is an encrypted calendar service that protects your schedule. Key features include:

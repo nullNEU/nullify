@@ -5,7 +5,6 @@ date: 2024-10-23T13:13:01-04:00
 draft: false
 image: "/images/tools/smspool-logo.png"
 linkToTool: "https://smspool.net"
-tryItNow: "https://smspool.net/register"
 ---
 SMSPool provides private phone number verification without personal information. Key features include:
 - Non-VoIP numbers

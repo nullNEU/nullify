@@ -5,7 +5,6 @@ date: 2024-10-21T13:13:01-04:00
 draft: false
 image: "/images/tools/tuta-logo.jpg"
 linkToTool: "https://tuta.com/calendar"
-tryItNow: "https://app.tuta.com/signup"
 ---
 
 Tuta Calendar offers encrypted calendar management with multi-device sync. Key features include:

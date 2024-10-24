@@ -5,7 +5,6 @@ date: 2024-10-23T13:13:01-04:00
 draft: false
 image: "/images/tools/addy-logo.jpg"
 linkToTool: "https://addy.io"
-tryItNow: "https://app.anonaddy.com/register"
 ---
 AnonAddy provides unlimited anonymous email aliases with self-hosting option. Key features include:
 - Unlimited aliases

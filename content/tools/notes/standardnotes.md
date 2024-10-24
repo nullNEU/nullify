@@ -5,7 +5,6 @@ date: 2024-10-21T13:13:01-04:00
 draft: false
 image: "/images/tools/standardnotes-logo.jpg"
 linkToTool: "https://standardnotes.com/"
-tryItNow: "https://standardnotes.com/get-started"
 ---
 
 Standard Notes is a secure note-taking platform focused on simplicity and privacy. Key features include:

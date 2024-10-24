@@ -5,7 +5,6 @@ date: 2024-10-23T13:13:01-04:00
 draft: false
 image: "/images/tools/yubico-logo.jpg"
 linkToTool: "https://www.yubico.com"
-tryItNow: "https://www.yubico.com/store"
 ---
 YubiKey provides physical authentication devices trusted by millions. Key features include:
 - FIDO2/WebAuthn support

@@ -5,7 +5,6 @@ date: 2024-10-21T13:13:01-04:00
 draft: false
 image: "/images/tools/bitwarden-logo.png"
 linkToTool: "https://bitwarden.com/"
-tryItNow: "https://vault.bitwarden.com/#/register"
 ---
 
 Bitwarden is an open-source password manager that securely stores your logins across all devices. Key features include:

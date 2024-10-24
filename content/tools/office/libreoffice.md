@@ -5,7 +5,6 @@ date: 2024-10-21T13:13:01-04:00
 draft: false
 image: "/images/tools/libreoffice-logo.jpg"
 linkToTool: "https://www.libreoffice.org/"
-tryItNow: "https://www.libreoffice.org/download/download-libreoffice/"
 ---
 
 LibreOffice is a comprehensive open-source office suite. Key features include:

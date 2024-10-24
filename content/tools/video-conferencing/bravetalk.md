@@ -5,7 +5,6 @@ date: 2024-10-23T13:13:01-04:00
 draft: false
 image: "/images/tools/brave.png"
 linkToTool: "https://talk.brave.com"
-tryItNow: "https://brave.com/talk"
 ---
 Brave Talk offers private and secure video calling right from your browser. Key features include:
 - End-to-end encryption by default
