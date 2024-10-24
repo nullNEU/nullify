@@ -47,7 +47,7 @@
 
 .tool-card-list {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     gap: 1rem;
     margin-top: 20px;
 }
@@ -57,7 +57,7 @@
 }
 
 .tool-card {
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px var(--medium-gray) solid;
     padding: 20px;
 }
