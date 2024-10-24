@@ -1,14 +1,14 @@
 <!-- CSS Objects -->
-{{ $indexCSS := resources.Get "css/index.css" }}
-{{ $homeCSS := resources.Get "css/home.css" }}
-{{ $headerCSS := resources.Get "css/header.css" }}
-{{ $footerCSS := resources.Get "css/footer.css" }}
-{{ $eventsCSS := resources.Get "css/events.css" }}
-{{ $careersCSS := resources.Get "css/careers.css" }}
-{{ $teamCSS := resources.Get "css/team.css" }}
-{{ $projectsCSS := resources.Get "css/projects.css" }}
-{{ $blogsCSS := resources.Get "css/blogs.css" }}
-{{ $toolsCSS := resources.Get "css/tools.css" }}
+{{ $indexCSS := resources.Get "css/index.css" | resources.Fingerprint }}
+{{ $homeCSS := resources.Get "css/home.css" | resources.Fingerprint }}
+{{ $headerCSS := resources.Get "css/header.css" | resources.Fingerprint }}
+{{ $footerCSS := resources.Get "css/footer.css" | resources.Fingerprint }}
+{{ $eventsCSS := resources.Get "css/events.css" | resources.Fingerprint }}
+{{ $careersCSS := resources.Get "css/careers.css" | resources.Fingerprint }}
+{{ $teamCSS := resources.Get "css/team.css" | resources.Fingerprint }}
+{{ $projectsCSS := resources.Get "css/projects.css" | resources.Fingerprint }}
+{{ $blogsCSS := resources.Get "css/blogs.css" | resources.Fingerprint }}
+{{ $toolsCSS := resources.Get "css/tools.css" | resources.Fingerprint }}
 
 <head>
     <title>{{- .Title -}}</title>
@@ -21,17 +21,17 @@
     <!-- Favicon -->
     <link rel="icon" href="/icon.ico" type="image/x-icon">
 
-    <!-- CSS Stylesheet Inclusions -->
-    <link type="text/css" rel="stylesheet" href="{{ $indexCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $homeCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $headerCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $footerCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $eventsCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $careersCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $teamCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $projectsCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $blogsCSS.RelPermalink }}"/>
-    <link type="text/css" rel="stylesheet" href="{{ $toolsCSS.RelPermalink }}"/>
+    <!-- CSS Stylesheet Inclusions with Fingerprinting and SRI -->
+    <link type="text/css" rel="stylesheet" href="{{ $indexCSS.Permalink }}" integrity="{{ $indexCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $homeCSS.Permalink }}" integrity="{{ $homeCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $headerCSS.Permalink }}" integrity="{{ $headerCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $footerCSS.Permalink }}" integrity="{{ $footerCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $eventsCSS.Permalink }}" integrity="{{ $eventsCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $careersCSS.Permalink }}" integrity="{{ $careersCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $teamCSS.Permalink }}" integrity="{{ $teamCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $projectsCSS.Permalink }}" integrity="{{ $projectsCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $blogsCSS.Permalink }}" integrity="{{ $blogsCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $toolsCSS.Permalink }}" integrity="{{ $toolsCSS.Data.Integrity }}" />
 
     <!-- Generic Header Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
