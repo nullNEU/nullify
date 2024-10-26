@@ -1,0 +1,17 @@
+{{ define "main" }}
+    <div class="page-content" id="tool-detail-page">
+        <div class="tool-detail-page-header">
+            <img class="tool-detail-page-logo" src="{{ .Params.Image }}" height="50" width="50" />
+            <div>
+                {{- partial "pageheader.html" ( dict "header" .Title "subHeader" .Description ) -}}
+            </div>
+        </div>
+        <div class="tool-detail-page-links">
+            <!-- Uncomment when the key is added in all frontmatter files -->
+            <!-- <a class="tool-detail-page-site" href="{{ .Params.OfficialSite }}">Official site <img height="15" width="15" src="/icons/external-link.svg" alt="External link icon" /></a> -->
+            <a class="tool-detail-page-try" href="{{ .Params.LinkToTool }}">Try it now <img height="15" width="15" src="/icons/external-link.svg" alt="External link icon" /></a>
+        </div>
+        <div class="page-content-separator"></div>
+        {{ .Content }}
+    </div>
+{{ end }}
