@@ -23,11 +23,6 @@ team:
     linkedin: https://www.linkedin.com/in/prmody/
     mastodon: https://mastodon.social/@impl_patrix
     imageSrc: /team/pratik.jpeg
-  - name: Salman Wajid
-    position: Outreach Director
-    linkedin: https://www.linkedin.com/in/salman-wajid-411455163/
-    mastodon: https://mastodon.social/@salmanwz
-    imageSrc: /team/salman.jpeg
   - name: Sourabh Pawar
     position: Events Manager
     linkedin: https://www.linkedin.com/in/sourabhp28/
