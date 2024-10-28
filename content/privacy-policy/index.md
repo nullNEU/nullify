@@ -3,7 +3,6 @@ title: "Privacy Policy"
 date: 2024-05-16T16:04:57-04:00
 draft: false
 ---
-
 # Privacy Policy
 
 At null NEU, we are committed to protecting the privacy of our website visitors. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you interact with our website. Please read this Privacy Policy carefully to understand how we handle your information.
