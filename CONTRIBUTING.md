@@ -28,8 +28,8 @@ All issues about this project are tracked as [GitHub issues on this repository](
 ## Opening a PR
 Once you have the project setup and running on your system, you can start contributing to it.
 - Create a new branch on your local system
-  > [!IMPORTANT]
-  > Please ensure that you create a separate branch (from `main`) on your fork for each contribution and name it appropriately (not `main`) since it makes reviewing code easier.
+> [!IMPORTANT]
+> Please ensure that you create a separate branch (from `main`) on your fork for each contribution and name it appropriately (not `main`) since it makes reviewing code easier.
   ```bash
   git checkout -b <your-branch-name> # creates a new branch and switches to it
   ```
