@@ -27,7 +27,7 @@ We adhere to data minimization principles:
 ## 2. Communication Channels
 
 When you interact with us through our official channels:
-- RSS Feeds for updates
+- RSS Feeds for updates (Work in Progress)
 - [Telegram Group](https://t.me/+S7uxWGwmLfY5NTk1)
 - [LinkedIn Group](https://www.linkedin.com/groups/12743211)
 - [NUEngage Page](https://neu.campuslabs.com/engage/organization/null_neu)
