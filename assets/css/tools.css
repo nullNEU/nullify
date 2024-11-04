@@ -47,7 +47,7 @@
 
 .tool-card-list {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
     gap: 1rem;
     margin-top: 20px;
 }
@@ -57,9 +57,13 @@
 }
 
 .tool-card {
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px var(--medium-gray) solid;
     padding: 20px;
+}
+
+.tool-card:hover {
+    border: 1px var(--base-white) solid;
 }
 
 .tool-card-header {
@@ -70,6 +74,7 @@
 
 .tool-card-header-logo {
     filter: grayscale(1);
+    border-radius: 10px;
 }
 
 .tool-card:hover .tool-card-header-logo {
@@ -81,13 +86,59 @@
     text-decoration: underline;
 }
 
-.tool-card p {
-    margin-top: 15px;
+.tool-card-description {
+    margin: 0;
+    margin-bottom: 10px;
     padding-left: 47px;
+}
+
+.read-more {
+    color: var(--medium-gray);
+    padding-left: 47px;
+}
+
+#tool-detail-page ul li {
+    list-style-type: disc;
+}
+
+.tool-detail-page-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tool-detail-page-logo {
+    border-radius: 10px;
+}
+
+.tool-detail-page-links {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.tool-detail-page-site {
+    text-decoration: none !important;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px var(--base-gray) solid;
+}
+
+.tool-detail-page-try {
+    text-decoration: none !important;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    color: var(--base-white);
+    background-color: var(--null-red);
 }
 
 @media screen and (max-width: 700px) {
     .tool-card-list {
         grid-template-columns: auto;
+    }
+
+    .tool-detail-page-header {
+        flex-direction: column;
+        align-items: start;
     }
 }

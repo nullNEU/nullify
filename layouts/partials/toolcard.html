@@ -4,8 +4,9 @@
   <div class="tool-card-header">
     <img class="tool-card-header-logo" src="{{ .Params.Image }}" height="35px" width="35px" />
     <h3>{{ .Title }}</h3>
-    <a href="/">Try it now</a>
+    <a href="{{ .Params.LinkToTool }}" target="_blank" rel="noreferrer">Try it now</a>
   </div>
   <p class="tool-card-description">{{ .Description }}</p>
+  <a href="{{ .Permalink }}" class="read-more">Read more >></a>
 </div>
 {{ end }}

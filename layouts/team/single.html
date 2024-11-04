@@ -16,7 +16,7 @@
                 {{ end }}
             </div>
             <div class="team-member-list">
-                {{ range last 4 .Params.Team }}
+                {{ range after 3 .Params.Team }}
                     <div class="team-member">
                         <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
                         <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
