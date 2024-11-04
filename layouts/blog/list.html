@@ -1,24 +1,19 @@
-<!DOCTYPE html><html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div class="page-content">
-            {{- partial "pageheader.html" ( dict "header" "We write." "subHeader" "Latest Insights and Guides" ) -}}
-            <div class="page-content-separator"></div>
-            <div class="page-list">
-                {{ range (.CurrentSection.Pages.ByDate).Reverse }}
-                {{- partial "listcard.html"
-                    ( dict
+{{ define "main" }}
+    <div class="page-content">
+        {{- partial "pageheader.html" ( dict "header" "We write." "subHeader" "Latest Insights and Guides" ) -}}
+        <div class="page-content-separator"></div>
+        <div class="page-list">
+            {{ range (.CurrentSection.Pages.ByDate).Reverse }}
+            {{- partial "listcard.html"
+                ( dict
                         "cardType" "blog"
                         "cardTitle" .Page.Title
                         "cardDescription" .Page.Summary
                         "buttonLink" .RelPermalink
                         "buttonText" "Read more"
-                    )
-                -}}
-                {{ end }}
-             </div>
+                )
+            -}}
+            {{ end }}
         </div>
-        {{- partial "footer.html" . -}}
-    </body>
-</html>
+    </div>
+{{ end }}
