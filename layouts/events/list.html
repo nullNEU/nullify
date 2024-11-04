@@ -1,37 +1,29 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        
-        <div class="page-content">
-            {{- partial "pageheader.html" ( dict "header" "We have the best speakers." "subHeader" "Security professionals from world-class firms" ) -}}
-            <p class="speakers-from">SPEAKERS FROM</p>
-            <div class="company-strip">
-                <img class="company-strip-logo" src="/company-logos/akamai.svg" alt="Akamai" />
-                <img class="company-strip-logo" src="/company-logos/citizens-bank.svg" alt="Citizen" />
-                <img class="company-strip-logo" src="/company-logos/discover.svg" alt="Discover" />
-                <img class="company-strip-logo" src="/company-logos/ernst-and-young.svg" alt="E&Y" />
-                <img class="company-strip-logo" src="/company-logos/fidelity.svg" alt="Fidelity" />
-                <img class="company-strip-logo" src="/company-logos/raytheon.svg" alt="Raytheon" />
-            </div>
-            <div class="page-content-separator"></div>
-            <div class="page-list">
-                {{ range (.CurrentSection.Pages.ByParam "eventDate").Reverse }}
-                {{- partial "listcard.html"
-                    ( dict
-                        "cardType" "event"
-                        "cardTitle" .Page.Title
-                        "cardDescription" .Page.Summary 
-                        "eventDate" .Params.EventDate
-                        "buttonLink" .Params.EventLink
-                        "buttonText" "View on LinkedIn"
-                    )
-                -}}
-                {{ end }}
-            </div>
+{{ define "main" }}
+    <div class="page-content">
+        {{- partial "pageheader.html" ( dict "header" "We have the best speakers." "subHeader" "Security professionals from world-class firms" ) -}}
+        <p class="speakers-from">SPEAKERS FROM</p>
+        <div class="company-strip">
+            <img class="company-strip-logo" src="/company-logos/akamai.svg" alt="Akamai" />
+            <img class="company-strip-logo" src="/company-logos/citizens-bank.svg" alt="Citizen" />
+            <img class="company-strip-logo" src="/company-logos/discover.svg" alt="Discover" />
+            <img class="company-strip-logo" src="/company-logos/ernst-and-young.svg" alt="E&Y" />
+            <img class="company-strip-logo" src="/company-logos/fidelity.svg" alt="Fidelity" />
+            <img class="company-strip-logo" src="/company-logos/raytheon.svg" alt="Raytheon" />
         </div>
-
-        {{- partial "footer.html" . -}}
-    </body>
-</html>
+        <div class="page-content-separator"></div>
+        <div class="page-list">
+            {{ range (.CurrentSection.Pages.ByParam "eventDate").Reverse }}
+            {{- partial "listcard.html"
+                ( dict
+                    "cardType" "event"
+                    "cardTitle" .Page.Title
+                    "cardDescription" .Page.Summary 
+                    "eventDate" .Params.EventDate
+                    "buttonLink" .Params.EventLink
+                    "buttonText" "View on LinkedIn"
+                )
+            -}}
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
