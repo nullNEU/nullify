@@ -1,31 +1,25 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div class="page-content" style="text-align: center;">
-            {{- partial "pageheader.html" ( dict "header" "Our Team" "subHeader" "The Executive Board" ) -}}
-            <div class="team-member-list">
-                {{ range first 3 .Params.Team }}
-                    <div class="team-member">
-                        <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
-                        <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
-                        <p>{{.position}}</p>
-                        <a href="{{ .mastodon }}" target="_blank"><img height="30" width="30" src="/icons/mastodon.svg" alt="Mastodon logo" /></a>
-                    </div>
-                {{ end }}
-            </div>
-            <div class="team-member-list">
-                {{ range after 3 .Params.Team }}
-                    <div class="team-member">
-                        <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
-                        <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
-                        <p>{{.position}}</p>
-                        <a href="{{ .mastodon }}" target="_blank"><img height="25" width="25" src="/icons/mastodon.svg" alt="Mastodon logo" /></a>
-                    </div>
-                {{ end }}
-            </div>
+{{ define "main" }}
+    <div class="page-content" style="text-align: center;">
+        {{- partial "pageheader.html" ( dict "header" "Our Team" "subHeader" "The Executive Board" ) -}}
+        <div class="team-member-list">
+            {{ range first 3 .Params.Team }}
+                <div class="team-member">
+                    <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
+                    <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
+                    <p>{{.position}}</p>
+                    <a href="{{ .mastodon }}" target="_blank"><img height="30" width="30" src="/icons/mastodon.svg" alt="Mastodon logo" /></a>
+                </div>
+            {{ end }}
         </div>
-        {{- partial "footer.html" . -}}
-    </body>
-</html>
+        <div class="team-member-list">
+            {{ range after 3 .Params.Team }}
+                <div class="team-member">
+                    <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
+                    <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
+                    <p>{{.position}}</p>
+                    <a href="{{ .mastodon }}" target="_blank"><img height="25" width="25" src="/icons/mastodon.svg" alt="Mastodon logo" /></a>
+                </div>
+            {{ end }}
+        </div>
+    </div>
+{{ end }}

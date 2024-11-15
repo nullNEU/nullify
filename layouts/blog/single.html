@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
+{{ define "main" }}
         <div class="page-content">
             <div class="blogs-description">
                 {{- partial "pageheader.html" ( dict "header" .Title ) -}}
@@ -15,6 +11,4 @@
                 {{ .Content }}
             </article>
         </div>
-        {{- partial "footer.html" . -}}
-    </body>
-</html>
+ {{ end }}

@@ -1,36 +1,28 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-
-        <div class="home">
-            <div class="matters-wrapper home-content-item">
-                <ul class="content-container-list">
-                    <li class="matters-text content-container-list-item">Security</li>
-                    <li class="matters-text content-container-list-item">Privacy</li>
-                    <li class="matters-text content-container-list-item">Open source</li>
-                </ul>
-            </div>
-            <h2>matters to us</h2>
-            <div class="cards">
-                {{- partial "homecard.html" ( dict "iconSrc" "/icons/dev.svg" "text" "Secure software development" "link" "/projects" ) -}}
-                {{- partial "homecard.html" ( dict "iconSrc" "/icons/connect.svg" "text" "Creating impactful connections" "link" "/events" ) -}}
-                {{- partial "homecard.html" ( dict "iconSrc" "/icons/train.svg" "text" "Train together, win together" "link" "/events" ) -}}
-            </div>
+{{ define "main" }}
+    <div class="home">
+        <div class="matters-wrapper home-content-item">
+            <ul class="content-container-list">
+                <li class="matters-text content-container-list-item">Security</li>
+                <li class="matters-text content-container-list-item">Privacy</li>
+                <li class="matters-text content-container-list-item">Open source</li>
+            </ul>
         </div>
-        
-        <div class="map-area">
-            <div class="map-image"></div>
-            <p>
-                We are the official student chapter of the null community at Northeastern University,
-                dedicated to fostering a dynamic environment for cybersecurity education, collaboration, and innovation.
-            </p>
-            <a id="join-conversation-button" href="https://t.me/+S7uxWGwmLfY5NTk1">Join the conversation
-                <span><img height="17" width="17" src="/icons/telegram.svg" alt="null NEU on a map of the world" /></span>
-            </a>
+        <h2>matters to us</h2>
+        <div class="cards">
+            {{- partial "homecard.html" ( dict "iconSrc" "/icons/dev.svg" "text" "Secure software development" "link" "/projects" ) -}}
+            {{- partial "homecard.html" ( dict "iconSrc" "/icons/connect.svg" "text" "Creating impactful connections" "link" "/events" ) -}}
+            {{- partial "homecard.html" ( dict "iconSrc" "/icons/train.svg" "text" "Train together, win together" "link" "/events" ) -}}
         </div>
+    </div>
 
-        {{- partial "footer.html" . -}}
-    </body>
-</html>
+    <div class="map-area">
+        <div class="map-image"></div>
+        <p>
+            We are the official student chapter of the null community at Northeastern University,
+            dedicated to fostering a dynamic environment for cybersecurity education, collaboration, and innovation.
+        </p>
+        <a id="join-conversation-button" href="https://t.me/+S7uxWGwmLfY5NTk1">Join the conversation
+            <span><img height="17" width="17" src="/icons/telegram.svg" alt="null NEU on a map of the world" /></span>
+        </a>
+    </div>
+{{ end }}
