@@ -6,5 +6,5 @@ summary: "NullNEU welcomes you to our first CTF event - Underworld CTF. Dive int
 
 Beware - threats often lurk right in front of you. We recommend that you bring a friend! (team size: upto 4)"
 eventLink: https://www.linkedin.com/events/hadesctf7263008373120364545/
-eventDate: 2024-11-22T17:00:00-04:00
+eventDate: 2024-11-22T17:00:00-05:00
 ---
