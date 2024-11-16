@@ -1,6 +1,6 @@
 ---
 title: null CTF
-date: 2024-11-15T13:59:15-04:00
+date: 2024-11-15T13:59:15-05:00
 draft: false
 summary: "NullNEU welcomes you to our first CTF event - Underworld CTF. Dive into the world of cryptography, forensics, and network security in this beginner-friendly competition!
 
