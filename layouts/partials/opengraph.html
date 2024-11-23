@@ -1,0 +1,11 @@
+{{ with .Site.Params.title }}
+<meta property="og:title" content="{{ . }}" />
+{{ end }}
+{{ with .Site.Params.description }}
+<meta property="og:description" content="{{ . }}" />
+{{ end }}
+<!--
+{{ with .Site.Params.image }}
+<meta property="og:image" content="{{ . | absURL }}" />
+{{ end }}
+-->
