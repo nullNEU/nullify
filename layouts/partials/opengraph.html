@@ -1,11 +1,31 @@
-{{ with .Site.Params.title }}
-<meta property="og:title" content="{{ . }}" />
-{{ end }}
-{{ with .Site.Params.description }}
-<meta property="og:description" content="{{ . }}" />
-{{ end }}
 <!--
 {{ with .Site.Params.image }}
 <meta property="og:image" content="{{ . | absURL }}" />
 {{ end }}
 -->
+
+<meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
+<!-- Twitter -->
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<!--<meta name="twitter:image" content="{{ .Site.Params.og_image | absURL }}" /> -->
+
+<!-- Google -->
+<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:locale" content="en" />
+<!-- <meta property="og:image" content="{{ .Params.Site.BaseURL }}{{ .Site.Params.og_image | relURL }}" /> -->
+<!-- <meta property="og:image:secure_url" content="{{ .Site.Params.og_image | absURL }}" /> -->
+
+
+
+<meta property="og:title" content="{{ .Site.Params.title }}" />
+<meta property="og:description" content="{{ .Site.Params.description }}" />
+<!-- <meta property="og:image" content="{{ .Site.Params.image | absURL }}" /> -->
