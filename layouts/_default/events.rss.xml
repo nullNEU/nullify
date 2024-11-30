@@ -52,7 +52,9 @@
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Params.eventLink }}</guid>
-      <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
+      <description>
+        Event date: {{ .Params.eventDate | time | time.Format "Mon, 02 Jan 2006 at 3:04 PM" }}&lt;br&gt;{{ .Summary | transform.XMLEscape | safeHTML }}
+      </description>
     </item>
     {{- end }}
   </channel>
