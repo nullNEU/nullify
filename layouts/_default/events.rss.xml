@@ -53,7 +53,9 @@
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       <guid>{{ .Params.eventLink }}</guid>
       <description>
-        Event date: {{ .Params.eventDate | time | time.Format "Mon, 02 Jan 2006 at 3:04 PM" }}&lt;br&gt;{{ .Summary | transform.XMLEscape | safeHTML }}
+        Event date: {{ .Params.eventDate | time | time.Format "Mon, 02 Jan 2006 at 3:04 PM" }}
+        &lt;br&gt;&lt;br&gt;
+        {{ .Summary | transform.XMLEscape | safeHTML }}
       </description>
     </item>
     {{- end }}
