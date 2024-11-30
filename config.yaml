@@ -2,3 +2,6 @@ baseURL: "https://nullneu.org/"
 languageCode: "en-us"
 title: "Null NEU"
 enableRobotsTXT: true
+
+params:
+  description: "A cybersecurity club at Northeastern University focused on learning and sharing knowledge in security."
