@@ -23,3 +23,13 @@ If you find a bug somewhere, feel free to raise a [new issue](https://github.com
 > Please check if the bug/feature you are raising/requesting has already been reported before you create a new issue!
 
 Detailed guidelines for setting the project up locally and contributing can be found in the [contribution guidelines](CONTRIBUTING.md) for the project.
+
+----
+
+### Contributors
+
+Shoutout to all our contributors for making this website as cool as it is!
+
+<a href="https://github.com/nullneu/nullify/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nullneu/nullify&anon=1" />
+</a>
