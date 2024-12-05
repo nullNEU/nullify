@@ -16,7 +16,10 @@
     <!-- Include Open Graph meta tags-->
     {{ partial "opengraph.html" . }}
 
-    
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}
+
     <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
