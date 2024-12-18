@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <div class="page-content">
+        {{- partial "pageheader.html" ( dict "header" "The Advisory Board." "subHeader" "They are ready to mentor and guide you and the club") -}}
+        <div class="page-content-separator"></div>
+        <div class="advisory-member-list">
+            {{ range first 4 .Params.advisory }}
+                <div class="advisory-member">
+                    <img height="200" width="200" class="advisory-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
+                    <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
+                    <p>{{.bio}}</p>
+                </div>
+            {{ end }}
+        </div>  
+            {{ if .Params.purpose }}
+            <div class="purpose-description">
+                <h2>Purpose</h2>
+                <p>{{ .Params.purpose}}</p>
+            </div>
+            {{ end }}
+        </div>     
+    </div>
+{{ end }}
