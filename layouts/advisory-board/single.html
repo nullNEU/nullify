@@ -4,8 +4,8 @@
         <div class="page-content-separator"></div>
         <div class="advisory-member-list">
             {{ range first 4 .Params.advisory }}
-                <div class="advisory-member">
-                    <img height="200" width="200" class="advisory-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
+                <div class="team-member">
+                    <img height="200" width="200" class="team-member-image" src="{{ .imageSrc }}" alt="{{ .name }}" />
                     <a href="{{ .linkedin }}" target="_blank">{{.name}}</a>
                     <p>{{.bio}}</p>
                 </div>
@@ -14,7 +14,7 @@
             {{ if .Params.purpose }}
             <div class="purpose-description">
                 <h2>Purpose</h2>
-                <p>{{ .Params.purpose}}</p>
+                <p>{{ .Params.purpose }}</p>
             </div>
             {{ end }}
         </div>     
