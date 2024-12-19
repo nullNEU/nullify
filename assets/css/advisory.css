@@ -1,0 +1,23 @@
+.advisory-member-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 50px;
+}
+
+.advisory-member p {
+    font-size: 1rem; 
+    margin-top: 10px; 
+    margin-bottom: 15px; 
+    max-width: 250px;
+    line-height: 1.5;
+    color: var(--medium-gray)
+}
+
+.purpose-description p{
+    width: 100%;
+    text-align: left;
+    padding: auto;  
+    color: var(--medium-gray)
+}

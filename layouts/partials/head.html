@@ -9,6 +9,7 @@
 {{ $projectsCSS := resources.Get "css/projects.css" | resources.Fingerprint }}
 {{ $blogsCSS := resources.Get "css/blogs.css" | resources.Fingerprint }}
 {{ $toolsCSS := resources.Get "css/tools.css" | resources.Fingerprint }}
+{{ $advisoryCSS := resources.Get "css/advisory.css" | resources.Fingerprint }}
 
 <head>
     <title>{{- .Title -}}</title>
@@ -39,6 +40,7 @@
     <link type="text/css" rel="stylesheet" href="{{ $projectsCSS.Permalink }}" integrity="{{ $projectsCSS.Data.Integrity }}" />
     <link type="text/css" rel="stylesheet" href="{{ $blogsCSS.Permalink }}" integrity="{{ $blogsCSS.Data.Integrity }}" />
     <link type="text/css" rel="stylesheet" href="{{ $toolsCSS.Permalink }}" integrity="{{ $toolsCSS.Data.Integrity }}" />
+    <link type="text/css" rel="stylesheet" href="{{ $advisoryCSS.Permalink }}" integrity="{{ $advisoryCSS.Data.Integrity }}" />
 
     <!-- Generic Header Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
