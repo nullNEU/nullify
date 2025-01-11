@@ -1,10 +1,10 @@
 ---
 title: "secureblue"
 description: "Hardened immutable Linux desktop with enhanced security controls"
-date: 2025-01-11T13:13:01-04:00
+date: 2025-01-11T13:13:01-0400
 draft: false
 image: "/images/tools/secureblue-logo.png"
-linkToTool: "https://github.com/secureblue/secureblue"
+linkToTool: "https://secureblue.github.io"
 ---
 secureblue provides a hardened, immutable operating system based on Fedora Atomic that enhances security through comprehensive controls. Key features include:
 - Hardened system design with global hardened_malloc
