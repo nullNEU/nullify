@@ -20,7 +20,7 @@ team:
     imageSrc: /team/parthiv.jpeg
   - name: Samyukta Kurikala
     position: Finance Head
-    linkedin: https://www.linkedin.com/in/prmody/
+    linkedin: https://www.linkedin.com/in/samyukta-kurikala/
     mastodon: https://mastodon.social/@madamkurie
     imageSrc: /team/samyukta.jpg
   - name: Sourabh Pawar
