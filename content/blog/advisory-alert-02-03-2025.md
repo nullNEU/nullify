@@ -1,5 +1,5 @@
 ---
-title: "Advisory Alert 02 03 2025"
+title: "Advisory Alert 02-03-2025"
 date: 2025-02-03T23:30:36Z
 draft: false
 summary: Details about a phishing attack against the Research & Development Team at nullNEU.
