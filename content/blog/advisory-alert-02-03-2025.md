@@ -13,7 +13,7 @@ Emails are the channel through which business transactions and personal undertak
 
 Approximately three weeks ago, the Research & Development (R&D) team at nullNEU was targeted by an unknown party with the intention of obtaining $2,000 in funds from the club. This involved sending an initial email requesting discretion, through the impersonation of the Research Lead (Devesh Chande).
 
-{{< figure src="/images/Blog%20Post%20-%20First%20Email.PNG#center" alt="First email received on Fri, 10 Jan 2025 17:22:46 UTC" width="350" height="700" >}}
+{{< figure src="/images/Blog%20Post%20-%20First%20Email.PNG" alt="First email received on Fri, 10 Jan 2025 17:22:46 UTC" width="350" height="700" >}}
 
 Email header analysis disclosed the 'From' and 'Return-Path' to be 'officecontactmail0@internet[.]ru', indicating the utility of the zero-cost email service provider Mail[.]ru, provided by VK [(LSE: VKCO)](https://finance.yahoo.com/quote/VKCO.ME/), a leading Russian technology company. The content of the email body provides two insights: (i) the Development Lead (Parthiv Menon) was the sole target and (ii) the Research Lead (Devesh Chande) was impersonated.
 
@@ -21,7 +21,7 @@ The domain 'internet[.]ru' is a valid, serviceable domain used by Mail[.]ru, res
 
 A subsequent reply was sent to the impersonator, resulting in the following email being delivered:
 
-{{< figure src="/images/Blog%20Post%20-%20Second%20Email.PNG#center" alt="Second email received on Fri, 10 Jan 2025 22:11:19 UTC" width="350" height="700" >}}
+{{< figure src="/images/Blog%20Post%20-%20Second%20Email.PNG" alt="Second email received on Fri, 10 Jan 2025 22:11:19 UTC" width="350" height="700" >}}
 
 At this point, out-of-band (OOB) communication was initiated to validate this activity, after which it was determined that this was a targeted phishing attack. No resources / assets belonging to the club or associated parties has been compromised, although we will continue to monitor the situation and provide updates as necessary.
 

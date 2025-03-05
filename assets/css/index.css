@@ -111,7 +111,7 @@ button {
 
 /* CSS for images */
 
-img[src$='#center'] {
+img {
     display: block;
     margin: 0.7rem auto;
 }
