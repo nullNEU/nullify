@@ -20,6 +20,7 @@
                     "cardTitle" .Page.Title
                     "cardDescription" .Page.Summary 
                     "eventDate" .Params.EventDate
+                    "eventDateTime" (dateFormat "January 2, 2006 at 3:04 PM" .Params.EventDate)
                     "buttonLink" .Params.EventLink
                     "buttonText" "View on LinkedIn"
                 )
