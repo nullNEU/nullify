@@ -5,3 +5,5 @@
 {{ else }}
     <pre class="event-status-tag">#upcoming</pre>
 {{ end }}
+
+<div class="event-datetime">{{ .eventDate | dateFormat "January 2, 2006 at 3:04 PM" }}</div>
